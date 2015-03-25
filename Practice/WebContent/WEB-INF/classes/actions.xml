@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "struts-2.0.dtd">
+   
+   <struts>
+   <package name="actions" extends="practicePackage"  namespace="/">
+   <action name="testing_*" class="com.practice.action.ApplicationAction" method="{1}"/>
+   <action name="jsUml_*" class="com.practice.uml.PrepareUml" method="{1}">
+   
+   </action>
+   </package>
+   
+   </struts>

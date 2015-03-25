@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "struts-2.0.dtd">
+   
+   <struts>
+   <package name="practicePackage" namespace="/" extends="struts-default">
+   <result-types>
+   <result-type name="sessionExpired" class="com.practice.action.SessionExpire"/>
+   </result-types>
+   <interceptors>
+   <interceptor name="ApplicationInterceptor" class="com.practice.interceptor.ApplicationInterceptor" />
+   <interceptor-stack name="applicationStack">
+   <interceptor-ref name="defaultStack"/>
+   <interceptor-ref name="ApplicationInterceptor"/>
+   </interceptor-stack>
+   </interceptors>
+   <default-interceptor-ref name="ApplicationInterceptor"/>
+   <default-action-ref name="defaultAction"/>
+   <default-class-ref class="com.practice.action.DefaultAction"/>
+   
+   <global-results>
+   <result name="error">/error/Error.jsp</result>
+   <result name="inValidAcess" type="sessionExpired">/error/UnAuthorized.jsp</result>
+   <result name="exception">/error/Exception.jsp</result>
+   <result name="UML">/uml/jsuml.html</result>
+   </global-results>
+   <global-exception-mappings>
+   <exception-mapping exception="java.lang.NullPointerException" result="exception"  />
+   </global-exception-mappings>
+   
+   <action name="defaultAction">
+   <result>/error/Default.jsp</result>
+   </action>
+   </package>
+   <include file="actions.xml"/>
+   
+   </struts>
