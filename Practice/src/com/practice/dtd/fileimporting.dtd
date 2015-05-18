@@ -1,0 +1,18 @@
+<!ELEMENT file-importing (class) >
+<!ELEMENT class  (columns) >
+<!ATTLIST class name CDATA #REQUIRED>
+<!ATTLIST class table CDATA #REQUIRED>
+
+<!ELEMENT columns (column+) >
+<!ELEMENT column (data-in|extradata_remove|xls-details)* >
+<!ATTLIST column uniqe_columns (set1|set2) #IMPLIED >
+<!ATTLIST column empty (no|yes) "no" >
+<!ATTLIST column name CDATA #REQUIRED >
+<!ATTLIST column type (string|numeric|decimal|date|yesOrno) #IMPLIED >
+<!ELEMENT data-in (value+) >
+<!ELEMENT value (#PCDATA) >
+<!ELEMENT xls-details (column_name) >
+<!ELEMENT column_name (#PCDATA) >
+<!ELEMENT extradata_remove EMPTY >
+<!ATTLIST extradata_remove remove-data CDATA #REQUIRED >
+
