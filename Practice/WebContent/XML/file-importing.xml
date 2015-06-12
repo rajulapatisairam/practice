@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE file-importing SYSTEM "example.dtd">
+
+<file-importing>
+
+<class name="" table="">
+<columns>
+
+<column name="" empty="yes" type="yesOrno"  uniqe_columns="set1" >
+<data-in>
+<value></value>
+<value></value>
+</data-in>
+<extradata_remove remove-data=".0"/>
+<xls-details>
+<column_name></column_name>
+</xls-details>
+</column>
+</columns>
+
+</class>
+</file-importing>
