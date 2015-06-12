@@ -5,10 +5,12 @@
    
    <struts>
    <package name="actions" extends="practicePackage"  namespace="/">
-   <action name="testing_*" class="com.practice.action.ApplicationAction" method="{1}"/>
-   <action name="jsUml_*" class="com.practice.uml.PrepareUml" method="{1}">
-   
+   <action name="testing_*" class="com.practice.action.ApplicationAction" method="{1}">
+   <result name="studentRecords">/basics/studentRecords.jsp</result>
    </action>
+   <action name="jsUml_*" class="com.practice.uml.PrepareUml" method="{1}">
+   </action>
+    
    </package>
    
    </struts>
