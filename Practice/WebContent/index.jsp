@@ -24,8 +24,9 @@ Hello World !....
 <form action="jsUml_basicUMLData.action">
 <input type="submit" value="JS-UML"/>
 </form>
-<input type="submit" value="Student Records"/>
+
 <form action="testing_studentrecords.action">
+<input type="submit" value="Student Records"/>
 </form>
 
 </body>

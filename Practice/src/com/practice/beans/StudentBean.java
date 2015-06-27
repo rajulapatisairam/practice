@@ -4,6 +4,7 @@ public class StudentBean {
 	private int messageType;
 	private String refferenceName;
 	private String studentName;
+	
 	public int getMessageType() {
 		return messageType;
 	}
