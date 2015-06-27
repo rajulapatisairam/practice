@@ -52,7 +52,7 @@ public void studentAction() throws IOException, JSONException{
      * 
      * private int messageType;
 	private String refferenceName;
-	private String studentName;
+	private String studentName checking.
      */
     
     for(StudentBean bean : logic.getStudentData())
