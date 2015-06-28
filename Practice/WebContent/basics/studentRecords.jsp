@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type = "text/javascript">
-
+var results =[];
 var refference = 0;
 $( document ).ready(function() {
 	 $('input[type="radio"]').change(function() {
@@ -37,13 +37,13 @@ $.get("http://localhost:8080/Practice/Practice/testing_studentAction.action",{re
      index=index+1;
     // alert('Index is: '+index+" value is: "+value.empName);
      
-     content += '<tr id='+value.refferenceName+'>';
+     content += '<tr >';
      
-     content += '<td>'+value.messageType+'</td>';
-     content += '<td>'+value.refferenceName+'</td>';
+     content += '<td> <input type="text" 	readonly value='+value.messageType+' id='+value.refferenceName+'t1 name="msgType" /></td>';
+     content += '<td> <input type="text" 	readonly value='+value.refferenceName+' id='+value.refferenceName+'t2 name="refName" /> </td>';
      content += '<td >'+value.studentName+'</td>';
-     content += "<td> <input type='text' name ="+value.messageType+" onblur=changeAction("+value.refferenceName+") ></td>";
-     content += "<td > <input type='text' 	readonly ></td>";
+     content += "<td> <input type='text' name ='original' onblur=changeAction("+value.messageType+","+value.refferenceName+",this) ></td>";
+     content += "<td  style='display: none;'> <input type='text' 	readonly name='original' value="+value.messageType+" ></td>";
      content +='</tr>';
      
     });
@@ -52,13 +52,18 @@ $.get("http://localhost:8080/Practice/Practice/testing_studentAction.action",{re
     
 });
 }
-function changeAction(trId){
+function changeAction(messageType,refferenceName,currentValue){
 	
-	var messagType = $(trId).children("td:first").text();
-	//var refferenceName = $(trId).children("td:second").text();
-	//var currentValue = $(trId).children("td:third").text();
-	alert(' message Type is: '+messageType);
+	if($(currentValue).val()!=''){
+	//alert(' message Type is: '+messageType+'\n Refference Name is'+refferenceName+'\n Current Value is '+$(currentValue).val());
+	var msgType = $('#'+refferenceName+'t1');
+	var reffName = $('#'+refferenceName+'t2');
+	var diffrence = parseInt($(msgType).val()) - parseInt($(currentValue).val());
+	var newValue = parseInt($(reffName).val()) + parseInt($(currentValue).val());
+	$(msgType).val(diffrence);
+	$(reffName).val(newValue);
 	
+	}
 } 
 
 function checkBoxAction(checkBox){
