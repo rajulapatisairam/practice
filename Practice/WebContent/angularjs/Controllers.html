@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- 
+Author : Sairam Rajulapati.
+Date   : 1-June-2015.
+Concept: Controller Practice in Angular JS.
+ -->
+<html ng-app='myApp'>
+<head>
+<meta charset="ISO-8859-1">
+<title>{{name}}</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script type="text/javascript">
+
+// Angular Logi Part Start Here.....
+
+// Create Angular Module
+var myApp = angular.module('myApp',[]);
+
+// Create myApp Controller....
+myApp.controller('myController',function($scope){
+	
+	// Main Controller core logic part 
+	//author name
+	$scope.name =- 'Sairam Rajulapati';
+	
+	// $scop.index place an important role on editing and add functionality.
+	$scope.index = 0; // Index hold the eddited employee index value, it's used for edit the employee details.
+	
+	// JSON Array with single employee information.
+	$scope.employeeDetails = [{name:'Sairam Rajulapati',designation:'Java Developer',salary:1000}];
+	
+	// Empty array for hold new / edited employee information....
+	$scope.newEmployee = [];
+	//Edit Functionality
+	
+	// Employee Edit functionlaity
+	// @index represents new employee / edited employee corresponding index value.
+	// it's getting from employee display table in 3 column of every row.
+	$scope.edit = function( id )
+	{
+		//alert(' id is a: '+id);
+		// Getting employee details from employeeDetails array and assigned those value to newEmpoyee array for displaying value for editing.
+		$scope.newEmployee = $scope.employeeDetails[ id];
+		// assigned current employee index with global varaible.
+		$scope.index = id;
+	}
+	// Delete Functionality 
+	// same sinario regarding with edited functionality.
+	$scope.delete = function( index ){
+	//	alert(' id is s' +id);
+		$scope.employeeDetails.splice(index, 1); 
+	}
+	
+	// Save Functionality either eiting or save functionality.
+	
+	$scope.save = function(){
+       var size = $scope.employeeDetails.length;
+       
+       var id = $scope.index;
+       if($scope.index == 0)
+    	   {
+    	   $scope.newEmployee.id = size + 1 ;
+    	   $scope.employeeDetails.push($scope.newEmployee);
+    	   }
+    	   // After editing or saving we have to empty value from upper table.
+    	   $scope.newEmployee = [];
+    	   // After editing or saving we have set index as 0.
+    	   $scope.index = 0;
+    	   
+       //alert(' new id is '+$scope.newEmployee.id+' Name is: '+$scope.newEmployee.name+' designation is ; '+$scope.newEmployee.designation+' Salary '+$scope.newEmployee.salary);
+       
+	}
+});
+
+
+</script>
+</head>
+<body>
+<div ng-controller="myController" align="center">
+<table>
+<tr> 
+<th>Employee Name</th>
+<th>Employee Designation </th>
+<th> Employee Salary</th>
+ </tr>
+ <tbody>
+ <tr>
+ <td>  <input type="text" ng-model="newEmployee.name"/> </td>
+ <td> <input type="text" ng-model="newEmployee.designation"/> </td>
+ <td>  <input type="text" ng-model="newEmployee.salary"/></td>
+  <td style="display: none;"> Name : <input type="text"  ng-model="index"/>
+ 
+ </tr>
+ <tr align="center"> <td colspan="3" align="center">
+ <br>
+ <button ng-click="save()">Save Details</button>
+ </td></tr>
+ </tbody>
+</table>
+<br> Employee Details <br>
+<table border=1>
+<tr> 
+<th>Serial Number</th>
+<th>Employee Name</th>
+<th>Employee designation</th>
+<th>Employee Salary</th>
+<th> Edit</th>
+<th> Delete</th>
+ </tr>
+ <tbody align="center">
+ <tr ng-repeat="employee in employeeDetails track by $index">
+ <td> {{$index+1}}</td>
+ <td> {{employee.name}}</td>
+ <td> {{employee.designation}}</td>
+ <td> {{employee.salary}}</td>
+ <td> <a href="" ng-click="edit($index)">Edit</a> </td>
+ <td>  <a href="" ng-click="delete($index)">X</a> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<br><br>
+
+</body>
+</html>
