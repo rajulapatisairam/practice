@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Directives.</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script>
+var myApp = angular.module('myApp',[]);
+myApp.controller('myController',function($scope,$filterProvider){
+$scope.author = 'Sairam Rajulapati.';
+
+});
+myApp.directive('space',function(){
+return{
+link:function(scope,element,atts){
+var space='';
+var i=1;
+do{
+space=space+"<br/>";
+}while(i++<atts.size);
+element.html(space+atts.msg+'<br/>');
+}
+}
+});
+</script>
+</head>
+<body ng-controller='myController'>
+Author is : {{author}}
+<space size="2" msg="Input Directive"></space>
+<form name="myForm">
+Name Validation : <input type="text" name="userName" ng-model="author" ng-required="!userMail" placeholder="Your Name"/>
+<span style="color:red" ng-show="myForm.userName.$error.required">User Name Required</span>
+<br/>
+ Email  Validation : <input type="email" placeholder="yourmail@mail.com" name="userMail" ng-required="!author" ng-model="userMail"/>
+<span style="color:red" ng-show="myForm.userMail.$error.required">User Email Required</span>
+<span style="color:red" ng-show="myForm.userMail.$error.email">Not a valid Email</span>
+<br/>
+Number Validation : <input type="number" placeholder="Your Number" name="number" required ng-model="userNumber" ng-min="10" ng-max="100"/>
+<span style="color:red" ng-show="myForm.number.$error.min">Minimum Value Failed</span>
+<span style="color:red" ng-show="myForm.number.$error.max">Maximum Value Failed</span>
+
+<space size="2" msg="Check Box  Directive"></space>
+ Gender :<input type="checkbox" ng-model="gender" ng-init="gender='Male'" ng-true-value="'Male'" ng-false-value="'Female'" ng-checked="1"/> 
+{{gender}}
+
+<space size="2" msg="Date  Directive"></space>
+Date : <input type="date" ng-model="myDate" min={{today}} min="01-01-2013" max="12-31-2013" />
+
+<space size="2" msg="Bind Vs ng-bindTemplate  Directive"></space>
+<input type="text" ng-model="firstName"/><br/>
+<input type="text" ng-model="lastName"/><br/>
+Bind scope : <span ng-bind="firstName"></span> <br/>
+ng-bindtemplate : <span ng-bind-template="{{firstName}} {{lastName}}"></span> <br/>
+
+<space size="2" msg="Raise Event when cut (ctrl+x) Action  Directive"></space>
+Data Here : <input type="text" ng-cut="cut=true" ng-init="cut=false; data=' Data is ' "ng-model="data"/>
+{{cut}}
+
+<space size="2" msg="$cacheFactory.Cache Example"></space>
+
+</form>
+</body>
+</html>
