@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Services.</title>
+<script src="../js/angular.min.js"></script>
+
+<script>
+var myApp = angular.module('myApp',[]);
+var test = 'helloScript';
+myApp.controller('myController',function($scope,$log){
+	$scope.log = $log;
+$scope.author = 'Sairam Rajulapati.';
+$scope.message = 'log Messsage';
+$scope.buttonAction = function(){
+$scope.author=" Changed";
+alert('in goToBottom');
+}
+
+});
+myApp.directive('locationdirective',function($location){
+return{
+link:function(scope,element,attrs){
+var location = $location.absUrl();
+var url = $location.url();
+var protocol = $location.protocol();
+var host = $location.host();
+var port = $location.port();
+var path = $location.path();
+element.html(' Location is '+location+'<br/> url is : '+url+'<br/> protocol is : '+protocol+'<br/> host : '+host+'<br/> Port '+port+'<br/> Path '+path);
+}
+}
+});
+myApp.directive('docdirective',function($document){
+return{
+link:function(scope,element,atts){
+var title = $document[0].title;
+var url = $document[0].URL;
+var script = $document[0].scripts;
+var scriptText = $document[0].scripts[1].text;
+var domain = $document[0].domain;
+element.html('<br/><br/> Document Attributes by using $document service <br/>Title is : '+title+'<br/> URL is : '+url+'<br/> Number of Script Elements  '+script.length+'<br/> domain is : '+domain+'<br/> Document all Refference is <a href="http://www.w3schools.com/jsref/dom_obj_document.asp" >http://www.w3schools.com/jsref/dom_obj_document.asp</a>');
+
+}
+}
+});
+
+
+myApp.directive('space',function(){
+return{
+link:function(scope,element,atts){
+var space='';
+var i=1;
+do{
+space=space+"<br/>";
+}while(i++<atts.size);
+element.html(space+atts.msg+'<br/>');
+}
+}
+});
+
+</script>
+
+<body ng-controller="myController">
+author is : {{author}}<br/>
+
+<br/>Location Attributes by using #location service<br/>
+<span locationdirective > </span>
+<br/>
+
+<span size="3" msg="Document Attributes by using $document service"></span>
+<span docdirective > </span>
+
+<br/><br/> Log Attributes by using $log service <br/>
+<label>Message:
+  <input type="text" ng-model="message" /></label>
+  <button ng-click="log.log(message)">log</button>
+  <button ng-click="log.warn(message)">warn</button>
+  <button ng-click="log.info(message)">info</button>
+  <button ng-click="log.error(message)">error</button>
+  <button ng-click="log.debug(message)">debug</button>
+</body>
+</html>
