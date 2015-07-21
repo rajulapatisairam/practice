@@ -1,0 +1,72 @@
+<script type="text/javascript">
+$(document).ready(function() {
+
+//syntax highlighter
+hljs.tabReplace = '    ';
+hljs.initHighlightingOnLoad();
+
+//collapsible management
+$('.collapsible').collapsible({
+defaultOpen : 'section1',
+cookieName : 'nav'
+});
+$('.page_collapsible').collapsible({
+defaultOpen : 'body-section1',
+cookieName : 'body'
+});
+
+});
+
+function submitted() {
+var cifNoId = $('#cifNoId').val();
+var currencyId = $('#currencyId').val();
+
+//window.location.href = getDataFromViewForMultiPayment?"+cifNoId"+&";
+$('#form').submit();
+
+}
+
+function getDataFromTIForMultiPay() {
+var cifNoId = $('#cifNoId').val();
+var currencyId = $('#currencyId').val();
+alert("ref::::::" + cifNoId + "SIIIIIII:::::" + currencyId);
+$.get("getDataFromViewForMultiPayment.action", {
+cifId : cifNoId,
+currencyId : currencyId
+}, function(data, status) {
+          
+alert("TI List:::::::Multiple::::::::::::::Price:::::::::"+ Json.parse(data.boeDataForMultiplePrice1));
+
+});
+
+var content = '';
+content += '<tbody>';
+$('#thirdTableId').find("tr:gt(0)").remove();
+$.each(result.boeDataForMultiplePrice1, function(index, value) {
+
+// alert('Index is: '+index+" value is: "+value.empName);
+
+content += '<tr>';
+
+content += '<td>' + value.paymentRefNo + '</td>';
+content += '<td>' + value.partPaymentSlNo + '</td>';
+content += '<td>' + value.paymentDate + '</td>';
+content += '<td id='+value.paymentCurr+'>' + value.paymentCurr
++ '</td>';
+content += '<td id='+value.paymentAmount+'>' + value.paymentAmount
++ '</td>';
+content += '<td id='+value.endorseAmt+'>' + value.endorseAmt
++ '</td>';
+content += '<td id='+value.outstandingAmt+'>'
++ value.outstandingAmt + '</td>';
+
+/*  content += "<td> <input type='text' name ="+value.messageType+" onchange=mm("+value.messageType+") ></td>";
+content += "<td > <input type='text'></td>"; */
+content += '</tr>';
+
+});
+content += '</tbody>';
+$('#thirdTableId').append(content);
+
+}
+</script>
