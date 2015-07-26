@@ -21,9 +21,7 @@ Hello World !....
 <form action="customAction.action">
 <input type="submit" value="CustomAction"/>
 </form>
-<form action="jsUml_basicUMLData.action">
-<input type="submit" value="JS-UML"/>
-</form>
+
 
 <form action="testing_studentrecords.action">
 <input type="submit" value="Student Records"/>
