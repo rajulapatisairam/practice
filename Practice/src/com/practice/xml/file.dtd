@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT ratelibrary-importing (ratelibrary) >
+<!ELEMENT ratelibrary  (columns,database-columns?,validation? ) >
+<!ATTLIST ratelibrary name (prpl|dfrl|trpl|rptype) #REQUIRED>
+<!ATTLIST ratelibrary table CDATA #REQUIRED>
+<!ATTLIST ratelibrary primaryKey CDATA #REQUIRED>
+
+<!ELEMENT columns (column+) >
+
+<!ELEMENT column (data-in|extradata_remove)* >
+<!ATTLIST column uniqe_columns (set1|set2) #IMPLIED >
+<!ATTLIST column empty (no|yes) "no" >
+<!ATTLIST column excel-column-name CDATA #IMPLIED>
+<!ATTLIST column name ID #REQUIRED >
+<!ATTLIST column type (string|numeric|decimal|date|yesOrno) "string" >
+<!ELEMENT data-in (value+) >
+<!ELEMENT value (#PCDATA) >
+<!ELEMENT extradata_remove EMPTY >
+<!ATTLIST extradata_remove remove-data CDATA #REQUIRED  >
+
+<!ELEMENT database-columns (USERID,COMPANYID,CARRIER,CUSTOMER)>
+<!ELEMENT USERID EMPTY>
+<!ELEMENT COMPANYID EMPTY>
+<!ELEMENT CARRIER EMPTY>
+<!ELEMENT CUSTOMER EMPTY>
+<!ATTLIST USERID columnName CDATA #REQUIRED>
+<!ATTLIST COMPANYID columnName CDATA #REQUIRED>
+<!ATTLIST CARRIER columnName CDATA #REQUIRED>
+<!ATTLIST CUSTOMER columnName CDATA #REQUIRED>
+
+<!ELEMENT validation (if+, onlyOneColumnAmongColumns?) >
+<!ELEMENT if (is+) >
+<!ELEMENT is (then+) >
+<!ELEMENT then EMPTY >
+
+<!ATTLIST if column IDREF #REQUIRED>
+<!ATTLIST is equalTo CDATA #REQUIRED>
+<!ATTLIST is case-sensistive (no|yes) "no" >
+<!ATTLIST then columns IDREFS #REQUIRED>
+<!ATTLIST then equalTo CDATA #REQUIRED>
+<!ATTLIST then case-sensistive (no|yes) "no" >
+
+<!ELEMENT onlyOneColumnAmongColumns EMPTY>
+<!ATTLIST onlyOneColumnAmongColumns columns IDREFS #REQUIRED>
+<!ATTLIST onlyOneColumnAmongColumns equalTo CDATA #REQUIRED>
+<!ATTLIST onlyOneColumnAmongColumns case-sensistive (no|yes) "no" >
+
