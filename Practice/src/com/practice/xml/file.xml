@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ratelibrary-importing SYSTEM "rateLibraries.dtd">
+<ratelibrary-importing>
+<ratelibrary name="rptype"  table="rateplantype"  primaryKey="ratePlanTypeId">
+<columns>
+<column name="RATE_PLAN_TYPE"  uniqe_columns="set1"  empty="no"   />
+<column name=" Name"  uniqe_columns="set1"  />
+<column name=" Voice"  type="yesOrno"  />
+<column name=" Smartphone_Data"  type="yesOrno" />
+<column name=" Dumb_Phone_Data_Plan"  type="yesOrno" />
+<column name=" International_Smartphone_Data"  type="yesOrno"  />
+<column name=" Network_Type"  >
+<data-in>
+<value>NONE</value>
+<value>3G</value>
+<value>4G</value>
+<value>OPEN</value>
+</data-in>
+</column>
+
+<column name=" INTL_Voice"  >
+<data-in>
+<value>NONE</value>
+<value>MEXICO</value>
+<value>CANADA</value>
+</data-in>
+</column>
+
+<column name=" Text" >
+<data-in>
+<value>NONE</value>
+<value>UNLIMITED</value>
+<value>LIMITED</value>
+<value>OTHER</value>
+</data-in>
+</column>
+
+<column name=" Aircard"  type="yesOrno" />
+<column name=" tablet"  type="yesOrno" />
+<column name=" Telemetry"  type="yesOrno" />
+<column name=" Push_To_Talk"  type="yesOrno" />
+<column name=" Pooling_Allowed"  type="yesOrno" />
+</columns>
+<!--  Data Base Field -->
+<database-columns>
+<USERID columnName="user_id" />
+<COMPANYID columnName="company_id"/>
+<CARRIER columnName ="" />
+<CUSTOMER columnName="" />
+</database-columns>
+
+<!--   Rate Plan Type Validations-->
+<validation>
+<if column="Voice">
+<is equalTo="YES" case-sensistive="no">
+<then columns="Aircard tablet Telemetry" equalTo="NO"  case-sensistive="no"/>
+</is>
+<is equalTo="NO" >
+<then  columns="Dumb_Phone_Data_Plan INTL_Voice Smartphone_Data International_Smartphone_Data" equalTo="NO"/>
+</is>
+</if>
+
+<onlyOneColumnAmongColumns equalTo="YES" columns="Aircard tablet Telemetry Push_To_Talk"  case-sensistive="no"/>
+
+</validation>
+</ratelibrary>
+
+</ratelibrary-importing>
+
