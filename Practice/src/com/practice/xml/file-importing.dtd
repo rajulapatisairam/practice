@@ -1,0 +1,18 @@
+<!ELEMENT ratelibrary-importing (ratelibrary) >
+<!ELEMENT ratelibrary  (columns) >
+<!ATTLIST ratelibrary name (prpl|dfrl|trpl|rptype) #REQUIRED>
+<!ATTLIST ratelibrary table CDATA #REQUIRED>
+<!ATTLIST ratelibrary primaryKey CDATA #REQUIRED>
+
+<!ELEMENT columns (column+) >
+<!ATTLIST columns field-name CDATA #IMPLIED>
+<!ELEMENT column (data-in|extradata_remove)* >
+<!ATTLIST column uniqe_columns (set1|set2) #IMPLIED >
+<!ATTLIST column empty (no|yes) "no" >
+<!ATTLIST column excel-column-name CDATA #IMPLIED>
+<!ATTLIST column name CDATA #REQUIRED >
+<!ATTLIST column type (string|numeric|decimal|date|yesOrno) #IMPLIED >
+<!ELEMENT data-in (value+) >
+<!ELEMENT value (#PCDATA) >
+<!ELEMENT extradata_remove EMPTY >
+<!ATTLIST extradata_remove remove-data CDATA #REQUIRED  >
