@@ -1,11 +1,11 @@
-package com.sutisoft.roe.util;
+package util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import com.sutisoft.roe.setup.date.Pattern;
-import com.sutisoft.roe.setup.date.DatePatterns;
+import setup.date.Pattern;
+import setup.date.DatePatterns;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.sutisoft.roe.ratelibraries;
+package ratelibraries;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,9 +9,9 @@ import java.util.TreeSet;
 
 import org.apache.commons.lang.xwork.StringUtils;
 
-import com.sutisoft.roe.setup.AppConstants;
-import com.sutisoft.roe.setup.RowType;
-import com.sutisoft.roe.util.sessionutil.SessionUtils;
+import setup.AppConstants;
+import setup.RowType;
+import util.sessionutil.SessionUtils;
 
 public class RateLibrary {
 	private String ratePlanName = "";

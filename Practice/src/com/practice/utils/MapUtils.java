@@ -1,4 +1,4 @@
-package com.sutisoft.roe.util.collections;
+package util.collections;
 
 import java.util.Map;
 import org.apache.commons.lang.xwork.StringUtils;

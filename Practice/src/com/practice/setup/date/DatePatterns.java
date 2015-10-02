@@ -1,5 +1,5 @@
-package com.sutisoft.roe.setup.date;
-import com.sutisoft.roe.setup.date.Pattern;
+package setup.date;
+import setup.date.Pattern;
 
 /**
  * 

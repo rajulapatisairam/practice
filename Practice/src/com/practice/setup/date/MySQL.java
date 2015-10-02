@@ -1,4 +1,4 @@
-package com.sutisoft.roe.setup.date;
+package setup.date;
 
 /**
  * 

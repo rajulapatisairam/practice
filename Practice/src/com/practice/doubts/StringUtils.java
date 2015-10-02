@@ -6,7 +6,8 @@ public static void main(String...str) {
 	updatQuery("A", 789, checkLists);
 }
 private static void updatQuery(String status,int userId,String...chekLists){
-	String query=" Update xyz set status ="+status+", userId ="+userId+" where id in(%s) and billNo in(%s) ";
+	String query="SET @STATUS= "+status +";"
+			+ " Update xyz set status =@STATUS, userId ="+userId+" where id in(%s) and billNo in(%s) ";
 	String ids="";
 	String billNumbers="";
 	String coma=",";

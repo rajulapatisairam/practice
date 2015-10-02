@@ -1,4 +1,4 @@
-package com.sutisoft.roe.util;
+package util;
 
 /**
  * Date 8th June, 2015.

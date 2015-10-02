@@ -1,4 +1,4 @@
-package com.sutisoft.roe.util.reflections;
+package util.reflections;
 
 import java.lang.reflect.Field;
 

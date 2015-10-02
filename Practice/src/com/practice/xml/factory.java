@@ -1,4 +1,4 @@
-package com.sutisoft.roe.ratelibraries;
+package ratelibraries;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -12,10 +12,10 @@ import org.dom4j.DocumentException;
 import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 
-import com.sutisoft.roe.setup.AppConstants;
-import com.sutisoft.roe.setup.RowType;
-import com.sutisoft.roe.util.DataBaseSpecification.RatePlanTypes;
-import com.sutisoft.roe.util.sessionutil.SessionUtils;
+import setup.AppConstants;
+import setup.RowType;
+import util.DataBaseSpecification.RatePlanTypes;
+import util.sessionutil.SessionUtils;
 /**
  * 
  * @author Sairam Rajulapati.
