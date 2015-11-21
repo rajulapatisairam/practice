@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package com.sutisoft.roe.setup;
+
+/**
+ *This Program/class contains the common exceptions message mean while 
+ *developing any module. it's could be useful through out the application. 
+ *By Using this enum class we can maintain the uniform for exceptional messages. 
+ * 
+ * @author sairam rajulapati
+  */
+public interface SutiWemError {
+	public String getMessage();
+}
+ 
