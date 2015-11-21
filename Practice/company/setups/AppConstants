@@ -1,0 +1,169 @@
+package com.sutisoft.roe.setup;
+
+import org.apache.struts.util.MessageResources;
+
+/**
+ * 
+ * @version 1.1.1 18,June 2015
+ * @author jagadeshwarreddyt
+ *
+ */
+public interface AppConstants {
+	
+	/**
+	 *  Read Properties from ApplicationResources file.
+	 */
+	public static MessageResources APPLICATION_RESOURCES = MessageResources
+			.getMessageResources("com.sutisoft.roe.properties.ApplicationResources");
+	public static MessageResources ANALYTICS_RESOURCES = MessageResources
+			.getMessageResources("com.sutisoft.roe.properties.DAnalytics");
+	public static MessageResources RAWDATA_RESOURCES = MessageResources
+			.getMessageResources("com.sutisoft.roe.properties.RawUsageData");
+	
+	public static MessageResources AT_AND_T = MessageResources
+	.getMessageResources("com.sutisoft.roe.properties.ATandT");
+	
+	// Basic Constants
+	String EXPORT = "Export";
+	String SUCCESS =  "success";
+	String ERROR = "error";
+	String INPUT =  "input";
+	String AVAILABLE = "available";
+	String EXISTS = "exists"; 
+	
+	// Logs Constants
+	String IMPORT = APPLICATION_RESOURCES.getMessage("user.logs.Import");
+	String ANALYSIS = APPLICATION_RESOURCES.getMessage("user.logs.Analysis");
+	String REANALYSIS = APPLICATION_RESOURCES.getMessage("user.logs.Re-Analysis");
+	String DATA_PROPOSAL = APPLICATION_RESOURCES.getMessage("user.logs.DataProposal");
+	String VOICE_PROPOSAL = APPLICATION_RESOURCES.getMessage("user.logs.VoiceProposal");
+	String AWCDET = "Account & Wireless Charges File";
+	String AWSDET = "Account & Wireless Summary File";
+	String FEATURES_REPORT = "Features Report";
+	String STANDARD_USAGE = "Standard Usage Report";
+	String RATE_PLAN_ANALYSIS = "Rate Plan Analysis";
+	String RATE_PLAN_REANALYSIS = "Rate Plan Re-Analysis";
+	String Rate_PLAN_TYPE = "ratePlanType";
+	String NONE = "none";
+	String DATA_FEATURE_RATE_LIBRARY = APPLICATION_RESOURCES.getMessage("menu.menuList.dataFeaturesRateLibrary");
+	String PRIMARY_RATE_PLAN_LIBRARY = APPLICATION_RESOURCES.getMessage("menu.menuList.primaryRatePlanLibrary");
+	String TEXT_RATE_PLAN_LIBRARY = APPLICATION_RESOURCES.getMessage("menu.menuList.textRatePlanLibrary");
+	String RATE_PLAN_TYPE = APPLICATION_RESOURCES.getMessage("menu.menuList.ratePlanType");
+
+	//Analysis Constants
+		String VOICE = "voice";
+		String DATA = "data";
+		String OVERALL = "overall";
+		
+	//DAnalytics Constants
+	String AUTHENTICATION_KEY = ANALYTICS_RESOURCES.getMessage("client.authenticationkey");
+	String AUTHENTICATION_USERNAME = ANALYTICS_RESOURCES.getMessage("client.authenticationUserName");
+	String COMPANYADMIN_TYPEID = ANALYTICS_RESOURCES.getMessage("DAnalytics.companyAdmin.user_TypeId");
+	String COMPANYUSER_TYPEID = ANALYTICS_RESOURCES.getMessage("DAnalytics.companyUser.user_TypeId");
+	
+	//RawDataUsage
+	String AWCDET_DBCOLUMNS = RAWDATA_RESOURCES.getMessage("database.columns.acctwirelesscharges");
+	String AWSUMDET_DBCOLUMNS = RAWDATA_RESOURCES.getMessage("database.columns.acctsummarycharges");
+	String STANDARDUSAGE_DBCOLUMNS = RAWDATA_RESOURCES.getMessage("database.columns.standardusagereport");
+	String FEATURES_REPORT_DBCOLUMNS = RAWDATA_RESOURCES.getMessage("database.columns.featuresreport");
+	
+	String AWCDET_TABLENAME = "awcdet";
+	String AWSUMDET_TABLENAME = "awsumdet";
+	String STANDARDUSAGE_TABLENAME = "standard_usage_report";
+	String FEATURES_REPORT_TABLENAME = "features_report";
+	
+	String WIRELESS_NUMBER = "wireless_number";
+	String STANDARD_USAGE_MTN = "mobile_telephone_number";
+	String FEATURES_REPORT_MTN = "mtn";
+	
+	String VOICE_POOLING = "Voice Pooling";
+	String DATA_POOLING = "Data Pooling";
+	
+	String ANALYSIS_TYPE_MANUAL = "manual";
+	String ANALYSIS_TYPE_SYSTEM = "system";
+	
+	String DATA_FORMAT_WEST = "VZW-WEST";
+	String DATA_FORMAT_RDD = "VZW-RDD";
+	
+	// Session Attributes.
+	String CUSTOMER_ID = "customerId";
+	String USER_ID = "userId";
+	String COMPANY_ID = "companyId";
+	String CARRIER_ID = "carrierId";
+	
+	String CUSTOMER_ADMIN = "CustomerAdmin";
+	String CUSTOMER_USER = "CustomerUser";
+	String ACCOUNT_USER = "user";
+	String ADMIN = "Admin";
+	
+	//Invalid Messages
+	String INVALID_USERNAME_PASSWORD = "Invalid User Name or Password";
+	String QUERY = "query";
+	String RESULT = "result";
+	String ROWCOUNT = "rowCount";
+	// Rate Libraries.
+	String RATELIBRARY_IMPORTING = "ratelibrary-importing";
+	String RATELIBRARY = "ratelibrary";
+	String COLUMNS = "columns";
+	String COLUMN = "column";
+	String EXTRADATA_REMOVE = "extradata_remove";
+	String DATA_IN =  "data-in";
+	String VALUE =  "value";
+	String VALIDATION = "validation";
+	String IF = "if";
+	String IS = "is";
+	String STRING = "string";
+	String NUMERIC = "numeric";
+	String DECIMAL = "decimal";
+	String DATE = "date";
+	String YESORNO = "yesOrno";
+	String THEN= "then";
+	String ONLY_ONE_COLUMN_AMONG_COLUMNS= "onlyOneColumnAmongColumns";
+	String COLUMNS_SUM = "columnsSum";
+	String SET1 = "set1";
+	String SET2 = "set2";
+	String YES = "yes";
+	String No= "no";
+	String DATABASE_COLUMNS = "database-columns";
+	String USERID ="USERID";
+	String COMPANYID ="COMPANYID";
+	String CARRIER ="CARRIER";
+	String CUSTOMER ="CUSTOMER";
+	
+	String ATR_COLUMN = "@column";
+	String ATR_COLUMNS = "@columns";
+	String ATR_COLUMNNAME = "@columnName";
+	String ATR_NAME = "@name";
+	String ATR_TABLE = "@table";
+	String ATR_EMPTY = "@empty";
+	String ATR_PRIMARYKEY ="@primaryKey";
+	String ATR_UNIQE_COLUMNS = "@uniqe_columns";
+	String ATR_REMOVE_DATA = "@remove-data";
+	String ATR_TYPE = "@type";
+	String ATR_VALUE = "@value";
+	String ATR_EQUALTO = "@equalTo";
+	String ATR_CASE_SENSISTIVE = "@case-sensistive";
+	String ATR_EXCEL_COLUMN_NAME = "@excel-column-name";
+	String UPDATE = "update";
+	String CURRENT_ACTION = "currentAction";
+	
+	// Get Current Application deployed OS Name.
+	String OS = System.getProperty("os.name").toLowerCase();	
+	
+	//Enotification constants
+	String ENOTIFY_TEMP_TYPE_STANDARD = "STANDARD";
+	String ENOTIFY_TEMP_TYPE_CUSTOM = "CUSTOM";
+	
+	String ENOTIFY_TEMP_TYPE_ANALYSIS = "ANALYSIS";
+	String ENOTIFY_TEMP_TYPE_ZERO_USAGE = "ZERO USAGE";
+	String ENOTIFY_TEMP_TYPE_MTN_EMAIL = "MTN EMAIL";
+	String ENOTIFY_TEMP_TYPE_STANDARD_VOICE = "STANDARD_VOICE";
+	String ENOTIFY_TEMP_TYPE_STANDARD_DATA = "STANDARD_DATA";
+	String ENOTIFY_TEMP_TYPE_CUSTOM_VOICE = "CUSTOM_VOICE";
+	String ENOTIFY_TEMP_TYPE_CUSTOM_DATA = "CUSTOM_DATA";
+	String ENOTIFY_IMPORT_TYPE_ZERO_USAGE_TEMPLATE = "ZERO USAGE";
+	String ENOTIFY_IMPORT_TYPE_MTN_EMAIL = "MTN EMAIL";
+	
+	String FEEDBACK_REPORT_FILE_NAME = "feedBackReport%s.csv";
+	
+}
