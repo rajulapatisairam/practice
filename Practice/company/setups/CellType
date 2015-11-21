@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package com.sutisoft.roe.setup;
+
+/**
+ * 
+ * @author sairam rajulapati
+ *
+ */
+public enum CellType implements SutiWemError{
+	ONLY_NUMERIC("Only numeric value is allowed"),ONLY_DECIMAL("Only numeric value is allowed"),
+	ONLY_STRING("Only string is allowed"),YES_OR_NO("Either 'YES' or 'NO' is allowed"),NOT_EMPTY("Empty value not allowed"),
+	ONLY_DATE("Only date is allowed");
+	private String message;
+	private CellType(String message)
+	{
+		this.message=message;
+	}
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return this.message;
+	}
+	}
+
