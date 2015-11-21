@@ -1,0 +1,42 @@
+package com.sutisoft.roe.setup;
+
+/**
+ * 
+ * @author sairam rajulapati
+ *
+ */
+public enum RowType implements SutiWemError {
+	// Dependent is for if validation
+  //   Ex: - if voice is yes then aircard should be no. 
+/**
+ * Among_Columns : Group of all attributes  dosn't have certain value as common
+       value to all atrributes, only one  attribute allow to have it.
+ *   AirCard, Tablet, Telemetry, and Push To Talk.
+                        among the above only one should have a value as Yes.  
+ */
+	/**
+	 * Sum Of Columns:
+	 * Consider case in Text Rate Plan Libraries.
+	 * ALLOTTED = SMS + MMS (when SMS and MMS are not 'OPEN').
+	 */
+	NO_DUPLICATE(" File contains duplicate %s "),NOT_EMPTY(" %s Required"),
+	DEPENDENT(" Plan with %s - '%s' must have %s - '%s';"),AMONG_COLUMNS(" Only one among %s must be '%s';"),
+	COLUMNS_SUM("Columns '%s' Sum must be equall to - '%s';");
+  private String message;
+  private int condition;
+  private RowType(final String message){
+	  this.message=message;
+  }
+  synchronized public int getCondition() {
+	return condition;
+}
+	synchronized  public void setCondition(int condition) {
+	this.condition = condition;
+}
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return this.message;
+	}
+
+}
