@@ -1,0 +1,29 @@
+package com.sutisoft.roe.setup.module;
+
+import com.sutisoft.roe.setup.module.ModuleConstants.RateLibrary;
+
+
+/**
+ * 
+ * @version 1.1.1 18,June 2015 
+ * @author sairamr
+ */
+public enum ModuleAttributes {
+RATE_LIBRARIES(RateLibrary.REQUEST_ATTRIBUTES,RateLibrary.SESSION_ATTRIBUTES);
+
+private String[] requestAttributes;
+private String[] sessionAttributes;
+
+private ModuleAttributes(String requestAttributes[],String sessionAttributes[])
+{
+	this.requestAttributes = requestAttributes;
+	this.sessionAttributes = sessionAttributes;
+}
+public String[] getRequestAttributes() {
+	return requestAttributes;
+}
+public String[] getSessionAttributes() {
+	return sessionAttributes;
+}
+
+}
