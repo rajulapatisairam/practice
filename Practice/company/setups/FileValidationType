@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package com.sutisoft.roe.setup;
+
+/**
+ * @author sairam rajulapati
+ *
+ */
+public enum FileValidationType implements SutiWemError {
+	FILES_NOT_EMPTY("Files are Required"), FILE_NAMES_NOT_EMPTY("File names required"),
+	COLUMN_INDEXES_NOT_EMPTY("Column Index are required"), 
+	CHECK_DUPLICATE_CONDITION_NOT_EMPTY("Duplicate Check Fields Required"),
+	NUMBER_OF_CELLS("Cells Limit is Required"),
+	COLUMNS_TYPE_QUERY("Columns Type Query is Required"),
+	DUPLICATE_QUERY("Duplicate Checking Query is Required"),
+	INSERT_QUERY("Insertion Query is Required"),UPDATE_QUERY("Update Query is Required");
+  private String message;
+  private FileValidationType(final String message)
+  {
+	  this.message=message;
+  }
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return this.message;
+	}
+}
