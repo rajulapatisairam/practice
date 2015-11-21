@@ -1,0 +1,38 @@
+package com.sutisoft.roe.setup.module;
+
+import org.apache.struts.util.MessageResources;
+
+import com.sutisoft.roe.setup.AppConstants;
+import com.sutisoft.roe.util.reflections.FieldUtils;
+/**
+ * 
+ * 
+ * @author sairamr
+ * @version 1.1.1 8th, June 2015. 
+ */
+
+public class ModuleConstants {
+	 private static MessageResources applicationResources = AppConstants.APPLICATION_RESOURCES;
+	 public interface RateLibrary{
+    
+	public String DATA_FEATURE_RATE_LIBRARY = applicationResources.getMessage("menu.menuList.dataFeaturesRateLibrary");
+    public String PRIMARY_RATEPLAN_LIBRARY = applicationResources.getMessage("menu.menuList.primaryRatePlanLibrary");
+    public String RATEPLANTYPE = applicationResources.getMessage("menu.menuList.ratePlanType");
+    public String TEXT_RATEPLAN_LIBRARY = applicationResources.getMessage("menu.menuList.textRatePlanLibrary");
+
+    public String[] REQUEST_ATTRIBUTES = FieldUtils.getClassMemberValues(RequestAttributes.class);
+	public String[] SESSION_ATTRIBUTES  =  FieldUtils.getClassMemberValues(SessionAttributes.class);
+	public  class RequestAttributes{
+		public static String RATELIBRARY = "rateLibrary";
+		public static String DATAFEATURE = "dataFeature";
+		public static String TEXTRATEPLAN = "textRatePlan";
+		public static String ACCTORGMANAGER = "acctOrgManager";
+	}
+	public class SessionAttributes{
+		public static String EXPORT_QUERY = "exportQuery";
+		public static String TARGET_RATE_GROUP_NAME = "trgName";
+		public static String TARGET_RATE_GROUP_NOTES = "trgNotes";
+		public static String RATE_PLAN_TYPE = "ratePlanType";
+	}
+}
+}
