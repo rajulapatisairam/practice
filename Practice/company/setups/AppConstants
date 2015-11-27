@@ -5,7 +5,7 @@ import org.apache.struts.util.MessageResources;
 /**
  * 
  * @version 1.1.1 18,June 2015
- * @author jagadeshwarreddyt
+ * @author 
  *
  */
 public interface AppConstants {
