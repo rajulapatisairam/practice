@@ -1,4 +1,4 @@
-package com.sutisoft.roe.util;
+package com.mine.code.util;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,8 +14,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import com.sun.star.uno.RuntimeException;
-import com.sutisoft.roe.hibernate.JdbcConnection;
-import com.sutisoft.roe.setup.AppConstants;
+import com.mine.code.hibernate.JdbcConnection;
+import com.mine.code.setup.AppConstants;
 
 /**
  * 

@@ -1,4 +1,4 @@
-package com.sutisoft.roe.ratelibraries;
+package com.mine.code.ratelibraries;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -9,9 +9,9 @@ import java.util.TreeSet;
 
 import org.apache.commons.lang.xwork.StringUtils;
 
-import com.sutisoft.roe.setup.AppConstants;
-import com.sutisoft.roe.setup.RowType;
-import com.sutisoft.roe.util.sessionutil.SessionUtils;
+import com.mine.code.setup.AppConstants;
+import com.mine.code.setup.RowType;
+import com.mine.code.util.sessionutil.SessionUtils;
 
 public class RateLibrary {
 	private String ratePlanName = "";

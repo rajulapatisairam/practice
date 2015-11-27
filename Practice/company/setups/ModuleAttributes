@@ -1,6 +1,6 @@
-package com.sutisoft.roe.setup.module;
+package com.mine.code.setup.module;
 
-import com.sutisoft.roe.setup.module.ModuleConstants.RateLibrary;
+import com.mine.code.setup.module.ModuleConstants.RateLibrary;
 
 
 /**

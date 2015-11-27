@@ -1,4 +1,4 @@
-package com.sutisoft.roe.ratelibraries;
+package com.mine.code.ratelibraries;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -12,10 +12,10 @@ import org.dom4j.DocumentException;
 import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 
-import com.sutisoft.roe.setup.AppConstants;
-import com.sutisoft.roe.setup.RowType;
-import com.sutisoft.roe.util.DataBaseSpecification.RatePlanTypes;
-import com.sutisoft.roe.util.sessionutil.SessionUtils;
+import com.mine.code.setup.AppConstants;
+import com.mine.code.setup.RowType;
+import com.mine.code.util.DataBaseSpecification.RatePlanTypes;
+import com.mine.code.util.sessionutil.SessionUtils;
 /**
  *  <h2>  RateLibraryFactory </h2>
  *  The RateLibraryFactory program implements an applications that

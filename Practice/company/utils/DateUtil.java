@@ -1,4 +1,4 @@
-package com.sutisoft.roe.util;
+package com.mine.code.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,8 +6,8 @@ import java.util.Date;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.sutisoft.roe.setup.date.Pattern;
-import com.sutisoft.roe.setup.date.DatePatterns;
+import com.mine.code.setup.date.Pattern;
+import com.mine.code.setup.date.DatePatterns;
 
 
 /**

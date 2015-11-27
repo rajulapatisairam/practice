@@ -1,9 +1,9 @@
-package com.sutisoft.roe.setup.module;
+package com.mine.code.setup.module;
 
 import org.apache.struts.util.MessageResources;
 
-import com.sutisoft.roe.setup.AppConstants;
-import com.sutisoft.roe.util.reflections.FieldUtils;
+import com.mine.code.setup.AppConstants;
+import com.mine.code.util.reflections.FieldUtils;
 /**
  * 
  * 

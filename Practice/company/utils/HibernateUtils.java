@@ -1,4 +1,4 @@
-package com.sutisoft.roe.util.hibernate;
+package com.mine.code.util.hibernate;
 
 import java.util.List;
 import java.util.Map;
@@ -8,8 +8,8 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 
-import com.sutisoft.roe.hibernate.HibernateSessionFactory;
-import com.sutisoft.roe.util.LoggerUtils;
+import com.mine.code.hibernate.HibernateSessionFactory;
+import com.mine.code.util.LoggerUtils;
 
 public class HibernateUtils<Entity> {
 	public static final Logger LOGGER = Logger.getLogger(HibernateUtils.class);

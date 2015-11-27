@@ -1,4 +1,4 @@
-package com.sutisoft.roe.util.fileutil;
+package com.mine.code.util.fileutil;
 
 import java.io.File;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.Map;
 
 import org.apache.commons.lang.xwork.StringUtils;
 
-import com.sutisoft.roe.exception.FileImportingException;
-import com.sutisoft.roe.setup.FileValidationType;
+import com.mine.code.exception.FileImportingException;
+import com.mine.code.setup.FileValidationType;
 
 public class FileValidationUtils {
 public static void validateParameters(final File[] FILES,final String FILE_NAMES[],

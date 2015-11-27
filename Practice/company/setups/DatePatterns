@@ -1,5 +1,5 @@
-package com.sutisoft.roe.setup.date;
-import com.sutisoft.roe.setup.date.Pattern;
+package com.mine.code.setup.date;
+import com.mine.code.setup.date.Pattern;
 
 /**
  * 

@@ -1,8 +1,8 @@
-package com.sutisoft.roe.util;
+package com.mine.code.util;
 
 import org.apache.commons.lang.xwork.StringUtils;
 
-import com.sutisoft.roe.setup.AppConstants;
+import com.mine.code.setup.AppConstants;
 
 public enum DataBaseSpecification {
 	IMPORT("Import"),ANALYSIS("Analysis"),VOICE_PROPOSAL("Voice Proposal"),DATA_PROPOSAL("Data Proposal"),

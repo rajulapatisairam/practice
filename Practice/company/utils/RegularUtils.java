@@ -1,4 +1,4 @@
-package com.sutisoft.roe.util.regularutils;
+package com.mine.code.util.regularutils;
 
 import org.apache.commons.lang.xwork.StringUtils;
 /**

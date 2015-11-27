@@ -1,4 +1,4 @@
-package com.sutisoft.roe.util;
+package com.mine.code.util;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -10,7 +10,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.sutisoft.roe.hibernate.JdbcConnection;
+import com.mine.code.hibernate.JdbcConnection;
 
 public class DataBase {
 

@@ -1,4 +1,4 @@
-package com.sutisoft.roe.setup;
+package com.mine.code.setup;
 
 import org.apache.struts.util.MessageResources;
 
@@ -14,14 +14,14 @@ public interface AppConstants {
 	 *  Read Properties from ApplicationResources file.
 	 */
 	public static MessageResources APPLICATION_RESOURCES = MessageResources
-			.getMessageResources("com.sutisoft.roe.properties.ApplicationResources");
+			.getMessageResources("com.mine.code.properties.ApplicationResources");
 	public static MessageResources ANALYTICS_RESOURCES = MessageResources
-			.getMessageResources("com.sutisoft.roe.properties.DAnalytics");
+			.getMessageResources("com.mine.code.properties.DAnalytics");
 	public static MessageResources RAWDATA_RESOURCES = MessageResources
-			.getMessageResources("com.sutisoft.roe.properties.RawUsageData");
+			.getMessageResources("com.mine.code.properties.RawUsageData");
 	
 	public static MessageResources AT_AND_T = MessageResources
-	.getMessageResources("com.sutisoft.roe.properties.ATandT");
+	.getMessageResources("com.mine.code.properties.ATandT");
 	
 	// Basic Constants
 	String EXPORT = "Export";

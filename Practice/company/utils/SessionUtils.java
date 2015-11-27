@@ -1,4 +1,4 @@
-package com.sutisoft.roe.util.sessionutil;
+package com.mine.code.util.sessionutil;
 
 import java.io.File;
 
@@ -6,8 +6,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import org.apache.commons.lang.xwork.StringUtils;
 import org.apache.struts2.ServletActionContext;
-import com.sutisoft.roe.setup.AppConstants;
-import com.sutisoft.roe.setup.module.ModuleAttributes;
+import com.mine.code.setup.AppConstants;
+import com.mine.code.setup.module.ModuleAttributes;
 /**
  *  SessionUtils.java is a utils class.
  *   This calss can provide util functionalities for session activities. 

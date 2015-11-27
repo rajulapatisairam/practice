@@ -1,4 +1,4 @@
-package com.sutisoft.roe.util;
+package com.mine.code.util;
 
 /**
  * Date 8th June, 2015.
