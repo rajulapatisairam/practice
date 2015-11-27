@@ -1,0 +1,54 @@
+.header,.footer{
+  background-color:5CB8E6;
+  height:90px;
+  width:relative;
+  font-family:calibri;
+  border-radius:20px;
+  padding:2px;
+  }
+  body {
+    overflow-x: hidden;
+   
+}
+
+.wlcommit{
+	width: 96%;
+}
+.btnlogout{
+float: right;
+    margin-right: 11px;	
+}
+
+  
+  .footer{
+  width:100%;}
+  #head{}
+
+/* 
+  
+ input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  cursor: not-allowed;
+  background-color:transparent;
+  box-shadow:0 0 0;
+  border:0px;
+}*/
+
+ .logout {
+    margin-left: 56px;
+}
+
+
+ 
+  #minheight{
+  min-height:449px;
+  }
+  
+
+  
+
+  

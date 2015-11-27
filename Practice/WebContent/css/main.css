@@ -1,0 +1,81 @@
+
+body{
+overflow-x:hidden;
+padding-left:0px;
+padding-right:0px;
+
+}
+
+
+.container-fluid
+
+{
+
+padding:0px;
+
+}
+
+
+.header{
+
+background-color:#777777;
+height:100px;
+border-bottom:2px grey solid;
+
+
+}
+
+.content{
+
+min-height:747px;
+
+
+}
+
+
+	
+
+.footer{
+
+height:100px;
+background-color:#777777;
+border-top:2px grey solid;
+overflow:auto;
+
+
+}
+
+#logoblock{
+height: 100px;
+width: 160px;
+margin-left:5px;
+margin-top:5px;
+
+}
+
+
+li a:focus
+{
+	
+	background-color:#FBB450;
+
+}
+
+
+#header-list
+{
+	margin-left:3px;
+	 height: 40px;
+	 text-align:center;
+	 
+
+}
+#name{
+	margin-top:10px;
+	margin-left:5px;
+	
+}
+#list
+{
+	margin-top:50px;
+}

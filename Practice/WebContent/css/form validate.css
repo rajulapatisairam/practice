@@ -1,0 +1,304 @@
+<script>
+$.validator.setDefaults({
+	submitHandler: function() { alert("submitted!"); }
+});
+
+$().ready(function() {
+	// validate the comment form when it is submitted
+	
+
+	// validate signup form on keyup and submit
+	$("#accrual").validate({
+		rules: {
+			masterreference: {
+				required:true,
+				maxlength:3
+			},
+			eventreference: {
+				required: true,
+				maxlength: 3,
+				number:true
+			},
+			loantype: {
+				required: true,
+				maxlength: 3,
+				number:true
+			},
+			advancepartyrim: {
+				required: true
+				
+			},
+			depositaccountnumber: {
+				required: true
+				
+			
+			},
+			branchname: {
+				required: true
+				
+			},
+			loannumber: {
+				required: true,
+				number:true
+				
+			},
+			applicationdate: {
+				required: true
+				
+				
+			},
+			number1: {
+				required: true,
+				number:true
+				
+			},
+			number2: {
+				required: true,
+				number:true
+				
+			},
+			productcategory: {
+				required: true
+				
+			},
+			customername: {
+				required: true
+				
+			},
+			accountname: {
+				required: true
+				
+			},
+			inputbranch: {
+				required: true
+				
+			},
+			status: {
+				required: true
+				
+			},
+			commitmentnumber: {
+				required: true
+				
+			},
+			currency: {
+				required: true
+				
+			},
+			commitmenttenor: {
+				required: true,
+				maxlength: 6,
+				number:true
+			},
+			commitmentexpirydate: {
+				required: true
+				
+				
+			},
+			commitmentbalance: {
+				required: true,
+				number:true
+			},
+			effectiverate: {
+				required: true,
+				number:true
+			},
+			contractrate: {
+				required: true
+				
+				
+			},
+			loanrate: {
+				required: true
+				
+				
+			},
+			creditaccountnumber: {
+				required: true
+				
+				
+			},
+			initiationdate: {
+				required: true
+				
+				
+			},
+			maturitydate: {
+				required: true
+				
+				
+			},
+			tenor: {
+				required: true,
+				maxlength: 6,
+				number:true
+			},
+			credittoparty: {
+				required: true
+				
+				
+			},
+			firstpaymentduedate: {
+				required: true
+				
+				
+			},
+			
+			
+			
+			topic: {
+				required: "#newsletter:checked",
+				minlength: 2
+			},
+			agree: "required"
+		},
+		messages: {
+			masterreference: {
+			required:"Please enter your master referance",
+			maxlength:"your master referance must be 1 to 3 characters"
+			},
+			eventreference:{
+				required:"Please enter your event referance",
+				maxlength:"your event referance must be 1 to 3 numbers"
+			},
+			loantype:{
+				required:"Please enter your loan type",
+				maxlength:"your loan type must be 1 to 3 numbers"
+			},
+			advancepartyrim:{
+				required:"Please enter your Advance Parity RIM"
+				
+			},
+			depositaccountnumber:{
+				required:"Please enter your deposit account number"
+				
+			},
+			branchname:{
+				required:"Please enter your branchname"
+				
+			},
+			loannumber:{
+				required:"Please enter your loan number",
+				number:"Please enter valid number"
+				
+			},
+			applicationdate:{
+				required:"Please enter your application date"
+				
+			},
+			number1:{
+				required:"Please enter your First number",
+				number:"Please enter valid number"
+				
+			},
+			number2:{
+				required:"Please enter your Last number",
+				number:"Please enter valid number"
+				
+			},
+			productcategory:{
+				required:"Please enter your product"
+				
+			},
+			customername:{
+				required:"Please enter your customername"
+				
+			},
+			accountname:{
+				required:"Please enter your accountname"
+				
+			},
+			inputbranch:{
+				required:"Please enter your inputbranch"
+				
+			},
+			status:{
+				required:"Please enter your status"
+				
+			},
+			commitmentnumber:{
+				required:"Please enter your commitment number"
+				
+			},
+			currency:{
+				required:"Please enter your currency number"
+				
+			},
+			commitmenttenor:{
+				required:"Please enter your commitment tenor ",
+				maxlength:"your commitment tenor must be 1 to 6 numbers",
+				number:"Please enter valid number"
+			},
+			commitmentexpirydate:{
+				required:"Please enter your commitment expiry date"
+				
+			},
+			commitmentbalance:{
+				required:"Please enter your commitment balance ",
+				number:"Please enter valid number"
+			},
+			effectiverate:{
+				required:"Please enter your effective rate",
+				number:"Please enter valid number"
+			},
+			contractrate:{
+				required:"Please enter your contractrate date"
+				
+			},
+			loanrate:{
+				required:"Please enter your loan rate "
+				
+			},
+			creditaccountnumber:{
+				required:"Please enter your credit account number"
+				
+			},
+			initiationdate:{
+				required:"Please enter your initiationdate date"
+				
+			},
+			maturitydate:{
+				required:"Please enter your maturitydate date"
+				
+			},
+			dealdescription:{
+				required:"Please enter your deal description"
+				
+			},
+			tenor:{
+				required:"Please enter your tenor ",
+				maxlength:"your tenor must be 1 to 6 numbers",
+				number:"Please enter valid number"
+			},
+			credittoparty:{
+				required:"Please enter your credittoparty"
+				
+			},
+			firstpaymentduedate:{
+				required:"Please enter your first payment duedate"
+				
+			},
+			
+			username: {
+				required: "Please enter a username",
+				minlength: "Your username must consist of at least 2 characters"
+			},
+			password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long"
+			},
+			confirm_password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long",
+				equalTo: "Please enter the same password as above"
+			},
+			email: "Please enter a valid email address",
+			agree: "Please accept our policy"
+		}
+	});
+
+	
+
+	
+});
+</script>

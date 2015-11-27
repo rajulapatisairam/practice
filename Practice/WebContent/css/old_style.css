@@ -1,0 +1,152 @@
+.body_bg {
+    font-family: arial,helvetica,sans-serif !important;
+    font-size: 12px  !important;
+	background-color: #DBDBDB;
+}
+
+.Tr_head{
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(226,226,226,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(219,219,219,1)), color-stop(51%,rgba(209,209,209,1)), color-stop(100%,rgba(226,226,226,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(226,226,226,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(226,226,226,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(226,226,226,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(226,226,226,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */}
+
+.nav.nav-pills.nav-stacked a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.nav.nav-pills.nav-stacked  {
+    background-color: #B4B4B4 !important;
+}
+
+.nav.nav-pills.nav-stacked.bag_color{
+    background-color: #FFFFFF !important;
+}
+
+.nav.nav-pills.nav-stacked.bag_color a {
+    color: #00AAE5;
+}
+
+.modal-header {
+    background-color:#007DC0;
+	color:#ffffff;
+}
+
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #DBDBDB !important;
+    text-decoration: none;
+}
+
+.nav.nav-pills.nav-stacked > li {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+    border: 1px solid #D9D9D9 !important;
+}
+
+h5, .h5{
+	font-size: 12px  !important;
+}
+
+
+#body-section1 h5 {
+    margin-left: 25px;
+    margin-top: -20px;
+}
+.header_bg {
+    background-color: #007DC0;
+	color:#ffffff;
+}
+.head_text{
+	margin-top:10px;
+}
+.content_box {
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+	 min-height: 550px !important;
+}
+.side_nav {
+    border: 1px solid #EEEEEE;
+    padding-right: 0 !important;
+}
+.nav-pills > li > a {
+    border-radius: 0 !important;
+}
+.nav > li > a {
+   padding: 3px 15px !important;
+}
+legend{
+font-size:17px !important;
+margin-bottom:5px !important;
+padding:0 0 0 10px !important;
+}
+
+.collapsible, .page_collapsible, .accordion {
+    background: none repeat scroll 0 0 #D9F3FD;
+    color: #0395A4;
+	height:24px;
+	margin-bottom:10px;
+}
+.accordion-open span, .collapse-open span {
+    background: url("../img/grey_minus.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: inline-block;
+    padding: 20px 20px 5px 10px;
+}
+
+
+.accordion-close span, .collapse-close span {
+    background: url("../img/grey_plus.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: inline-block;
+    padding: 20px 20px 5px 10px;
+}
+
+
+.input-group-addon {
+    border-radius:0px !important;
+    padding: 0 5px !important;
+}
+
+.text_box{
+	border-radius:0px !important;
+    padding: 0 5px !important;
+	height:25px !important;
+}
+.form-control{
+	border-radius:0px !important;
+}
+
+.radio, .checkbox{
+	margin-bottom:5px !important;
+}
+
+.form-group{
+	margin-bottom:7px !important;
+}
+
+
+*:before, *:after {
+    -moz-box-sizing: border-box;
+}
+*:before, *:after {
+    -moz-box-sizing: border-box;
+}
+.btn-info {
+    background-color: #5BC0DE;
+    border-color: #46B8DA;
+    color: #FFFFFF;
+}
+.btn {
+    border-radius: 0 !important;
+    font-size: 13px  !important;
+    padding: 2px 8px !important;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+	padding:3px !important;
+}

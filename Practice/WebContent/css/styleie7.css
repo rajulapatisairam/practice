@@ -1,0 +1,26 @@
+#body-section1 h5
+{
+ /*left: 25px;
+    position: relative;
+    top: -30px;*/
+	  margin-left: 25px;
+    margin-top: -34px;
+}
+.accordion-open span, .collapse-open span {
+    background: url("../img/grey_minus.png") no-repeat scroll center center transparent;
+    display: inline-block;
+	position:relative;
+	top:-9px;
+}
+.accordion-close span, .collapse-close span {
+    background: url("../img/grey_plus.png") no-repeat scroll center center transparent;
+    display: inline-block;
+    position:relative;
+	top:-9px;
+}
+.body-bg{
+overflow-x:hidden;
+}
+#search_box{
+ margin-right:500px;
+ }

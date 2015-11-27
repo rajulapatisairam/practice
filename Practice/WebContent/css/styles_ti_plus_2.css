@@ -1,0 +1,993 @@
+/*General styles which will be used for each html component that matches with the defined name
+*/
+BODY {
+    BACKGROUND-COLOR: #ffffff;
+    MARGIN: 0;
+    PADDING: 0;
+}
+
+BODY,TD,TH,p,Div {
+    COLOR: #000000;
+    FONT: 75% Arial, Helvetica, sans-serif;
+}
+
+input {
+    color: #000000;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*.TIlabel_fixed,.TIlabelbold_fixed,.TIedit,.TIedit_fixed{
+FONT-FAMILY:"Courier New",Courier,monospace;
+}*/
+
+.TIedit_fixed{
+FONT-FAMILY:"Courier New",Courier,monospace;
+}
+
+BODY.CSCSList {
+    BACKGROUND-COLOR: #ffffff;
+}
+
+/* styles for messages */
+.msg_info {
+    BACKGROUND-COLOR: white;
+    COLOR: #009edc !important;
+    font-size: 150%;
+}
+.msg_warn {
+    BACKGROUND-COLOR: #e9ea00;
+    COLOR: black !important;
+    font-size: 150%;
+}
+.msg_error {
+    BACKGROUND-COLOR: #d9f3fd;
+    COLOR: #009edc !important;
+    font-size: 150%;
+}
+.msg_fatal {
+    BACKGROUND-COLOR: #a00000;
+    COLOR: white !important;
+    font-size: 150%;
+}
+
+TABLE {
+    BORDER: none;
+    MARGIN: 0;
+    PADDING: 0;
+    WIDTH: 100%;
+}
+
+/*TABLE.contenttable{
+}*/
+.wrapper {
+    WIDTH: 100%;
+    BORDER: 0;
+}
+
+/*continue reviewing from here*/
+TABLE.error,TABLE.warning {
+    BACKGROUND-COLOR: #ffffff;
+}
+
+.TIlabel {
+    padding-right: 5px;
+    }
+/*.TIlabel,.TIlabelbold{
+}*/
+.TIlabelbold {
+    FONT-WEIGHT: bold;
+    padding-right: 5px;
+}
+
+/*.TIlabel_fixed{
+}*/
+.TIlabelbold_fixed {
+    WIDTH: 100%;
+}
+
+input.TIedit {
+    WIDTH: 100%;
+}
+
+
+input.TIedit_ta_grey {
+    width: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    color: #484848;
+}
+
+
+textarea:readonly{
+    background-color: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    color: #808080;
+}
+.SearchBtn:disabled {
+    color: #808080;
+}
+.TIlabel:disabled {
+    color: #808080;
+}
+.TIlabelbold:disabled {
+    color: #808080;
+}
+.TIlabelbold_fixed:disabled {
+    color: #808080;
+}
+[disabled] {
+    border: 0 none;
+    color: #808080;
+}
+[readonly] {
+    color: #808080;
+}
+
+
+
+
+/* horizontal bar (hr) */ /*.TIbar{
+}*/
+SELECT {
+    FONT-SIZE: 100%;
+}
+
+/*OPTION{
+}*/
+INPUT.editinputs {
+    /*width: 200px;*/
+}
+INPUT.editinputm {
+    /*WIDTH: 400px;*/
+}
+INPUT.editinputl {
+    /*WIDTH: 800px;*/
+}
+
+TEXTAREA.editinputm {
+    WIDTH: 100%;
+}
+
+TEXTAREA.editinputl {
+    WIDTH: 100%;
+}
+
+TEXTAREA.editinputs {
+    WIDTH: 100%;
+}
+
+
+PRE {
+    FONT-STYLE: normal;
+    FONT-SIZE: x-small;
+}
+
+/*TD PRE{
+}*/
+b {
+    FONT-WEIGHT: bold;
+}
+
+/*These are the custom styles which will used for custom look and feel 
+*/
+input.checkbox {
+    WIDTH: 20px;
+}
+
+
+/* button (?) used to denote a search is available */
+.SearchBtn {
+    FONT-SIZE: 1.2em;
+    FONT-WEIGHT: bold;
+    COLOR: #0084b9;
+    BACKGROUND-COLOR: #ffffff;
+    BORDER: 0;
+    CURSOR: pointer;
+    WHITE-SPACE: nowrap;
+}
+
+/* smallish standard TI button */
+.button {
+    BORDER: 0px solid #009edc;
+    BACKGROUND-IMAGE: url(../images/but.gif);
+    BACKGROUND-REPEAT: repeat-x;
+    BACKGROUND-POSITION: left top;
+    COLOR: #ffffff;
+    FONT-SIZE: 100%;
+    padding-top: 2px;
+    padding-right: 8px;
+    padding-bottom: 1px;
+    padding-left: 8px;
+    FONT-WEIGHT: bold;
+    width:auto;
+    overflow:visible;   
+}
+
+/* wider standard TI button */
+.buttonW {
+    BORDER: 0px solid #009edc;
+    BACKGROUND-IMAGE: url(../images/but.gif);
+    BACKGROUND-REPEAT: repeat-x;
+    BACKGROUND-POSITION: left top;
+    COLOR: #ffffff;
+    FONT-SIZE: 100%;
+    padding-top: 2px;
+    padding-right: 8px;
+    padding-bottom: 1px;
+    padding-left: 8px;
+    FONT-WEIGHT: bold;
+    width:auto;
+    overflow:visible;   
+}
+
+/* button that has no width */
+.buttonNW {
+    BORDER: 0px solid #009edc;
+    BACKGROUND-IMAGE: url(../images/but.gif);
+    BACKGROUND-REPEAT: repeat-x;
+    BACKGROUND-POSITION: left top;
+    COLOR: #ffffff;
+    FONT-SIZE: 100%;
+    padding-top: 2px;
+    padding-right: 8px;
+    padding-bottom: 1px;
+    padding-left: 8px;
+    FONT-WEIGHT: bold;
+    width:auto;
+    overflow:visible;   
+}
+
+span.disabledLink {
+    FONT-SIZE: 100%;
+    COLOR: #999999;
+    TEXT-DECORATION: none;
+}
+
+span.disabledLink:hover,span.disabledLink:active {
+    FONT-SIZE: 100%;
+    COLOR: #999999;
+    TEXT-DECORATION: none;
+}
+
+a:link,a:visited {
+    COLOR: #0084b9;
+    TEXT-DECORATION: none;
+    FONT-WEIGHT: bold;
+}
+
+a:hover {
+    COLOR: #008000;
+    TEXT-DECORATION: underline;
+}
+
+.TIbutton {
+    FONT-STYLE: normal;
+    TEXT-DECORATION: none;
+    CURSOR: pointer;
+    MARGIN: 1px;
+}
+
+a.TIbutton {
+    MARGIN: 0;
+}
+
+/*Toggle bar common*/
+.TItoggle,.TItoggle1,.TItoggle2,.TItoggle3,.TItoggle4 {
+    WIDTH: 100%;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 150%;
+    PADDING: 2px 0 2px 0;
+    BORDER-BOTTOM: 2px solid #ffffff;
+}
+.TItoggle IMG,.TItoggle1 IMG,.TItoggle2 IMG,.TItoggle3 IMG,.TItoggle4 IMG{
+    MARGIN-LEFT: 5px;
+    MARGIN-RIGHT: 5px;
+}
+.TItoggle SPAN,.TItoggle1 SPAN,.TItoggle2 SPAN,.TItoggle3 SPAN,.TItoggle4 SPAN{
+    CURSOR: pointer;
+    FONT-WEIGHT: bold !important;
+    WIDTH: 90%;
+}
+/*Toggle bar specific*/
+/*general*/
+.TItoggle {
+    BACKGROUND-COLOR: #d9f3fd;
+}
+
+.TItoggle SPAN {
+    COLOR: #009edc !important;
+}
+
+/*warning*/
+.TItoggle1 {
+    BACKGROUND-COLOR: #e9ea00;
+}
+
+.TItoggle1 SPAN {
+    COLOR: #000000 !important;
+    MARGIN-LEFT: 2px;
+}
+
+.TItoggle1 img {
+    DISPLAY: none;
+}
+
+/*general 2*/
+.TItoggle2 {
+    BACKGROUND-COLOR: #ffffff;
+}
+
+.TItoggle2 SPAN {
+    COLOR: #009edc !important;
+    MARGIN-LEFT: 2px;
+}
+
+.TItoggle2 img {
+    DISPLAY: none;
+}
+
+/*question*/
+.TItoggle3 {
+    BACKGROUND-COLOR: #ffffff;
+}
+
+.TItoggle3 SPAN {
+    COLOR: black !important;
+    MARGIN-LEFT: 2px;
+}
+
+.TItoggle3 img {
+    DISPLAY: none;
+}
+
+/*error*/
+.TItoggle4 {
+    BACKGROUND-COLOR: #a00000;
+}
+
+.TItoggle4 span {
+    COLOR: #ffffff !important;
+    MARGIN-LEFT: 2px;
+}
+
+.TItoggle4 img {
+    DISPLAY: none;
+}
+
+/*12828*/
+.TILabelPREFORMATTED {
+    BACKGROUND-COLOR: #ffffff;
+}
+
+/* DC - Bug #14024::Added #1/#2/#4,and split the padding on #3 */
+.TI1 {
+    padding-left: 14px;
+    WIDTH: 25%;
+}
+
+.TI2 {
+    padding-right: 8px;
+    WIDTH: 25%;
+}
+
+.TI3 {
+    padding-left: 7px;
+    WIDTH: 25%;
+}
+
+.TI4 {
+    padding-right: 14px;
+    WIDTH: 25%;
+}
+
+/*Data Grid*/
+Table.embedded {
+    BACKGROUND-COLOR: #ffffff;
+    WIDTH: 100%; /*was 99%*/
+    BORDER: 0;
+}
+
+Table.embeddedFIXED {
+    BACKGROUND-COLOR: #ffffff;
+    WIDTH: 100%;
+    BORDER: 0;
+    BORDER-LEFT: 1px solid #d9d9d9;
+    BORDER-TOP: 1px solid #d9d9d9;    
+}
+
+Table.embedded TH,Table.embedded TD,Table.embeddedFIXED TH,Table.embeddedFIXED TD{
+    VERTICAL-ALIGN: top;
+    HEIGHT: 19px;
+    PADDING: 2px 4px;
+}
+
+Table.embedded TH,Table.embeddedFIXED TH {
+    FONT-WEIGHT: bold;
+    BACKGROUND: url(../images/TH_back.png) #ededed repeat top;
+    FONT-SIZE: 0.66em;
+    BORDER: 0;
+    BORDER-RIGHT: 1px solid #d9d9d9;
+    BORDER-BOTTOM: 1px solid #d9d9d9;
+}
+
+Table.embedded TD,Table.embeddedFIXED TD {
+    table-layout: fixed;
+    BORDER: 0;
+    BORDER-RIGHT: 1px solid #d9d9d9;
+    BORDER-BOTTOM: 1px solid #d9d9d9;
+    CURSOR: pointer;
+}
+
+.T1T4 Div {
+    BORDER-LEFT: 1px solid #d9d9d9;
+    BORDER-TOP: 1px solid #d9d9d9;
+    BORDER-BOTTOM: 1px solid #d9d9d9;
+}
+
+TH.error {
+    BACKGROUND-COLOR: #a00000;
+    BACKGROUND-IMAGE: none;
+    COLOR: #ffffff;
+}
+
+TH.warning {
+    BACKGROUND-COLOR: #a00000;
+    BACKGROUND-IMAGE: none;
+    COLOR: #ffffff;
+    FONT-WEIGHT: bold;
+}
+
+.highlighted TD {
+    BACKGROUND-COLOR: #009edc;
+    COLOR: #ffffff;
+}
+
+.highlighted td span:hover {
+    color: #FFFFFF !important;
+}
+
+.hi_em_arow td {
+    BACKGROUND-COLOR: #ededed;
+    FONT-WEIGHT: bold;
+}
+
+.TIBanner {
+    BACKGROUND-COLOR: #0084b9;
+    WIDTH: 100%;
+    COLOR: #ffffff;
+    PADDING-LEFT: 20px;
+    MARGIN-TOP: 10px;
+    FONT-WEIGHT: bold;
+}
+
+div.Section1 {
+    background-color: #ffffff;
+}
+/* section tab for document editing */
+div.DocumentSection {
+    background-color: #FDFDFD!important;
+    border-left-style: solid;
+    border-left-width:2px;
+    border-left-color: silver;
+    border-top-style: solid;
+    border-top-width:2px;
+    border-top-color: silver;
+    border-right-style: solid;
+    border-right-width:2px;
+    border-right-color: #585858;
+    border-bottom-style: solid;
+    border-bottom-width:2px;
+    border-bottom-color: #585858;
+    display:block;
+}
+
+div.DocumentSectionTab {
+    background-color: #585858!important;
+    color:#ffffff!important;
+    font-weight: bold;
+    font-size:8pt;
+    font-family: Arial, Helvetica, sans-serif; 
+    width: 100pt;
+    padding: 5pt 0pt 5pt 5pt;
+}
+
+
+.enigmaMessage {
+    COLOR: #a00000;
+}
+
+/* Template file styles */
+form {
+    BORDER: none;
+    MARGIN: 0;
+    PADDING: 0;
+}
+
+img {
+    BORDER: none;
+    MARGIN: 0;
+    PADDING: 0;
+}
+
+/*dropdown controls*/
+select.TIcombo {
+    FONT-SIZE: 100%;
+    WIDTH: auto;
+    BORDER: 1px solid #999999;
+}
+
+select.TIcombo33 {
+    WIDTH: auto;
+    BORDER: 1px solid #999999;
+}
+
+/* Background colours default table row data */
+.TIRow TD,.TIRow_Em TD,.TIRow_DL TD,.TIRow_DL_Em TD,.TIRow_Notes TD,.TIRow_Notes_Em TD
+    {
+    BACKGROUND-COLOR: #ffffff;
+    color: #000000;
+}
+
+/* Background colours for default alternate row table data */
+.TIRowAlt TD,.TIRowAlt_Em TD,.TIRowAlt_DL TD,.TIRowAlt_DL_Em TD,.TIRowAlt_Notes TD,.TIRowAlt_Notes_Em TD
+    {
+    BACKGROUND-COLOR: #ededed;
+    color: #000000;
+}
+
+/* Emphasised default row table data */
+.TIRow_Em TD,.TIRowAlt_Em TD {
+    FONT-WEIGHT: bold;
+}
+
+/* Highlighted default row table data */
+.TIRow_Hi TD,.TIRowAlt_Hi TD {
+    BACKGROUND-COLOR: #a00000;
+    COLOR: #ffffff;
+}
+
+/* Emphasised and Highlighted default row table data */
+.TIRow_HiEm TD,.TIRowAlt_HiEm TD {
+    FONT-WEIGHT: bold;
+    BACKGROUND-COLOR: #a00000;
+    COLOR: #ffffff;
+}
+
+/* Departmental Limits custom styles */
+.TIRow_DL_Em TD {
+    FONT-WEIGHT: bold;
+}
+
+.TIRowAlt_DL_Em TD {
+    FONT-WEIGHT: bold;
+}
+
+.TIRow_DL_Hi TD {
+    BACKGROUND-COLOR: #a00000;
+    COLOR: #ffffff;
+}
+
+.TIRowAlt_DL_Hi TD {
+    BACKGROUND-COLOR: #a00000;
+    COLOR: #ffffff;
+}
+
+.TIRow_DL_HiEm TD {
+    FONT-WEIGHT: bold;
+    BACKGROUND-COLOR: #a00000;
+    COLOR: #ffffff;
+}
+
+.TIRowAlt_DL_HiEm TD {
+    FONT-WEIGHT: bold;
+    BACKGROUND-COLOR: #a00000;
+    COLOR: #ffffff;
+}
+
+/* SLA dashboard custom styles */
+.TIRow_SLA_High TD,.TIRowAlt_SLA_High TD {
+    BACKGROUND-COLOR: #a00000;
+    COLOR: #ffffff;
+}
+
+.TIRow_SLA_Medium TD,.TIRowAlt_SLA_Medium TD {
+    BACKGROUND-COLOR: #e08000;
+    COLOR: #ffffff;
+}
+
+.TIRow_SLA_Low TD,.TIRowAlt_SLA_Low TD {
+    BACKGROUND-COLOR: #008000;
+    COLOR: #ffffff;
+}
+
+/* Error and warning styles */
+.TIRow_Status_Error TD,.TIRowAlt_Status_Error TD {
+    BACKGROUND-COLOR: #a00000;
+    COLOR: #ffffff;
+}
+
+.TIRow_Status_Warning TD,.TIRowAlt_Status_Warning TD {
+    BACKGROUND-COLOR: #e08000;
+}
+
+/* Default style classes */
+.TIRow_User_Default TD,.TIRow_User_Default_Em TD {
+    COLOR: #000000;
+    BACKGROUND-COLOR: #ccccff;
+}
+
+.TIRowAlt_User_Default TD,.TIRowAlt_User_Default_Em TD {
+    COLOR: #000000;
+    BACKGROUND-COLOR: #d9d9d9;
+}
+
+.TIRow_User_Default_Em TD,.TIRowAlt_User_Default_Em TD {
+    FONT-WEIGHT: bold;
+}
+
+/*
+*** SAMPLE USER NOTE STYLE ***
+.TIRow_User_Sample1 TD{color:#a00000;background-color:#E4E4E4;}
+.TIRow_User_Sample1_Em TD{color:#a00000;background-color:#E4E4E4;font-weight:bold;}
+.TIRowAlt_User_Sample1 TD{color:#a00000;background-color:#E4E4E4;}
+.TIRowAlt_User_Sample1_Em TD{color:#a00000;background-color:#E4E4E4;font-weight:bold;}
+*/ /* Hardcoded styles for upgrade to 603 */
+.TIRow_User_Amber_Em TD,.TIRowAlt_User_Amber_Em TD,.TIRow_User_Aqua_Em TD,.TIRowAlt_User_Aqua_Em TD,.TIRow_User_Black_Em TD,.TIRowAlt_User_Black_Em TD,.TIRow_User_Blue_Em TD,.TIRowAlt_User_Blue_Em TD,.TIRow_User_Fuchsia_Em TD,.TIRowAlt_User_Fuchsia_Em TD,.TIRow_User_Gray_Em TD,.TIRowAlt_User_Gray_Em TD,.TIRow_User_Green_Em TD,.TIRowAlt_User_Green_Em TD,.TIRow_User_Lime_Em TD,.TIRowAlt_User_Lime_Em TD,.TIRow_User_Maroon_Em TD,.TIRowAlt_User_Maroon_Em TD,.TIRow_User_Navy_Em TD,.TIRowAlt_User_Navy_Em TD,.TIRow_User_Olive_Em TD,.TIRowAlt_User_Olive_Em TD,.TIRow_User_PaleGreen_Em TD,.TIRowAlt_User_PaleGreen_Em TD,.TIRow_User_Purple_Em TD,.TIRowAlt_User_Purple_Em TD,.TIRow_User_Red_Em TD,.TIRowAlt_User_Red_Em TD,.TIRow_User_Silver_Em TD,.TIRowAlt_User_Silver_Em TD,.TIRow_User_Teal_Em TD,.TIRowAlt_User_Teal_Em TD,.TIRow_User_White_Em TD,.TIRowAlt_User_White_Em TD,.TIRow_User_Yellow_Em TD,.TIRowAlt_User_Yellow_Em TD
+    {
+    FONT-WEIGHT: bold;
+}
+
+.TIRow_User_Amber TD,.TIRowAlt_User_Amber TD,.TIRow_User_Amber_Em TD,.TIRowAlt_User_Amber_Em TD
+    {
+    BACKGROUND-COLOR: #008080;
+    color: #FFFFFF;
+}
+
+.TIRow_User_Aqua TD,.TIRowAlt_User_Aqua TD,.TIRow_User_Aqua_Em TD,.TIRowAlt_User_Aqua_Em TD
+    {
+    BACKGROUND-COLOR: #008080;
+    color: #FFFFFF;
+}
+
+.TIRow_User_Black TD,.TIRowAlt_User_Black TD,.TIRow_User_Black_Em TD,.TIRowAlt_User_Black_Em TD
+    {
+    BACKGROUND-COLOR: #000000;
+    COLOR: #ffffff;
+}
+
+.TIRow_User_Blue TD,.TIRowAlt_User_Blue TD,.TIRow_User_Blue_Em TD,.TIRowAlt_User_Blue_Em TD
+    {
+    BACKGROUND-COLOR: #37658c;
+    COLOR: #ffffff;
+}
+
+.TIRow_User_Fuchsia TD,.TIRowAlt_User_Fuchsia TD,.TIRow_User_Fuchsia_Em TD,.TIRowAlt_User_Fuchsia_Em TD
+    {
+    BACKGROUND-COLOR: #ff99cc;
+    COLOR: #000000;
+}
+
+.TIRow_User_Gray TD,.TIRowAlt_User_Gray TD,.TIRow_User_Gray_Em TD,.TIRowAlt_User_Gray_Em TD
+    {
+    BACKGROUND-COLOR: #999999;
+    COLOR: #ffffff;
+}
+
+.TIRow_User_Green TD,.TIRowAlt_User_Green TD,.TIRow_User_Green_Em TD,.TIRowAlt_User_Green_Em TD
+    {
+    BACKGROUND-COLOR: #008000;
+    COLOR: #ffffff;
+}
+
+.TIRow_User_Lime TD,.TIRowAlt_User_Lime TD,.TIRow_User_Lime_Em TD,.TIRowAlt_User_Lime_Em TD
+    {
+    BACKGROUND-COLOR: #33cc00;
+    COLOR: #000000;
+}
+
+.TIRow_User_Maroon TD,.TIRowAlt_User_Maroon TD,.TIRow_User_Maroon_Em TD,.TIRowAlt_User_Maroon_Em TD
+    {
+    BACKGROUND-COLOR: #a00000;
+    COLOR: #ffffff;
+}
+
+.TIRow_User_Navy TD,.TIRowAlt_User_Navy TD,.TIRow_User_Navy_Em TD,.TIRowAlt_User_Navy_Em TD
+    {
+    BACKGROUND-COLOR: #37658c;
+    COLOR: #ffffff;
+}
+
+.TIRow_User_Olive TD,.TIRowAlt_User_Olive TD,.TIRow_User_Olive_Em TD,.TIRowAlt_User_Olive_Em TD
+    {
+    BACKGROUND-COLOR: #808000;
+    COLOR: #ffffff;
+}
+
+.TIRow_User_PaleGreen TD,.TIRowAlt_User_PaleGreen TD,.TIRow_User_PaleGreen_Em TD,.TIRowAlt_User_PaleGreen_Em TD
+    {
+    BACKGROUND-COLOR: #80ff80;
+    COLOR: #000000;
+}
+
+.TIRow_User_Purple TD,.TIRowAlt_User_Purple TD,.TIRow_User_Purple_Em TD,.TIRowAlt_User_Purple_Em TD
+    {
+    BACKGROUND-COLOR: #800080;
+    COLOR: #ffffff;
+}
+
+.TIRow_User_Red TD,.TIRowAlt_User_Red TD,.TIRow_User_Red_Em TD,.TIRowAlt_User_Red_Em TD
+    {
+    BACKGROUND-COLOR: #a00000;
+    COLOR: #ffffff;
+}
+
+.TIRow_User_Silver TD,.TIRowAlt_User_Silver TD,.TIRow_User_Silver_Em TD,.TIRowAlt_User_Silver_Em TD
+    {
+    BACKGROUND-COLOR: #b4b4b4;
+    COLOR: #000000;
+}
+
+.TIRow_User_Teal TD,.TIRowAlt_User_Teal TD,.TIRow_User_Teal_Em TD,.TIRowAlt_User_Teal_Em TD
+    {
+    BACKGROUND-COLOR: #008080;
+    COLOR: #ffffff;
+}
+
+.TIRow_User_White TD,.TIRowAlt_User_White TD,.TIRow_User_White_Em TD,.TIRowAlt_User_White_Em TD
+    {
+    BACKGROUND-COLOR: #ffffff;
+    color: #000000
+}
+
+.TIRow_User_Yellow TD,.TIRowAlt_User_Yellow TD,.TIRow_User_Yellow_Em TD,.TIRowAlt_User_Yellow_Em TD
+    {
+    BACKGROUND-COLOR: #e9ea00;
+    color: #000000;
+}
+
+/* Style1 - Red on Green */
+.TIRow_User_Style1 TD {
+    COLOR: #a00000;
+    BACKGROUND-COLOR: #33cc00;
+}
+
+.TIRowAlt_User_Style1 TD {
+    COLOR: #a00000;
+    BACKGROUND-COLOR: #80ff80;
+}
+
+.TIRow_User_Style1_Em TD,.TIRowAlt_User_Style1_Em TD {
+    COLOR: #a00000;
+    BACKGROUND-COLOR: #33cc00;
+    FONT-WEIGHT: bold;
+}
+
+.TIRow_User_Style1_Hi TD,.TIRowAlt_User_Style1_Hi TD {
+    COLOR: #a00000;
+    BACKGROUND-COLOR: #33cc00;
+    FONT-STYLE: italic;
+}
+
+.TIRow_User_Style1_HiEm TD,.TIRowAlt_User_Style1_HiEm TD {
+    COLOR: #a00000;
+    BACKGROUND-COLOR: #33cc00;
+    FONT-STYLE: italic;
+    FONT-WEIGHT: bold;
+}
+
+/* Style2 - Blue on Yellow  */
+.TIRow_User_Style2 TD {
+    COLOR: #003366;
+    BACKGROUND-COLOR: #e9ea00;
+}
+
+.TIRowAlt_User_Style2 TD {
+    COLOR: #003366;
+    BACKGROUND-COLOR: #cccc66;
+}
+
+.TIRow_User_Style2_Em TD,.TIRowAlt_User_Style2_Em TD {
+    COLOR: #003366;
+    BACKGROUND-COLOR: #e9ea00;
+    FONT-WEIGHT: bold;
+}
+
+.TIRow_User_Style2_Hi TD,.TIRowAlt_User_Style2_Hi TD {
+    COLOR: #003366;
+    BACKGROUND-COLOR: #e9ea00;
+    FONT-STYLE: italic;
+}
+
+.TIRow_User_Style2_HiEm TD,.TIRowAlt_User_Style2_HiEm TD {
+    COLOR: #003366;
+    BACKGROUND-COLOR: #e9ea00;
+    FONT-STYLE: italic;
+    FONT-WEIGHT: bold;
+}
+
+/* Style3 - Red on Black  */
+.TIRow_User_Style3 TD {
+    COLOR: #ff6666;
+    BACKGROUND-COLOR: #000000;
+}
+
+.TIRowAlt_User_Style3 TD {
+    COLOR: #ff6666;
+    BACKGROUND-COLOR: #000000;
+}
+
+.TIRow_User_Style3_Em TD,.TIRowAlt_User_Style3_Em TD {
+    COLOR: #ff6666;
+    BACKGROUND-COLOR: #000000;
+    FONT-WEIGHT: bold;
+}
+
+.TIRow_User_Style3_Hi TD,.TIRowAlt_User_Style3_Hi TD {
+    COLOR: #ff6666;
+    BACKGROUND-COLOR: #000000;
+    FONT-STYLE: italic;
+}
+
+.TIRow_User_Style3_HiEm TD,.TIRowAlt_User_Style3_HiEm TD {
+    COLOR: #ff6666;
+    BACKGROUND-COLOR: #000000;
+    FONT-STYLE: italic;
+    FONT-WEIGHT: bold;
+}
+
+/* Style4 - Green on Black  */
+.TIRow_User_Style4 TD {
+    COLOR: #33cc99;
+    BACKGROUND-COLOR: #000000;
+}
+
+.TIRowAlt_User_Style4 TD {
+    COLOR: #33cc99;
+    BACKGROUND-COLOR: #000000;
+}
+
+.TIRow_User_Style4_Em TD,.TIRowAlt_User_Style4_Em TD {
+    COLOR: #33cc99;
+    BACKGROUND-COLOR: #000000;
+    FONT-WEIGHT: bold;
+}
+
+.TIRow_User_Style4_Hi TD,.TIRowAlt_User_Style4_Hi TD {
+    COLOR: #33cc99;
+    BACKGROUND-COLOR: #000000;
+    FONT-STYLE: italic;
+}
+
+.TIRow_User_Style4_HiEm TD,.TIRowAlt_User_Style4_HiEm TD {
+    COLOR: #33cc99;
+    BACKGROUND-COLOR: #000000;
+    FONT-STYLE: italic;
+    FONT-WEIGHT: bold;
+}
+
+/* Style5 - White on Red  */
+.TIRow_User_Style5 TD,.TIRowAlt_User_Style5 TD {
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #a00000;
+}
+
+.TIRow_User_Style5_Em TD,.TIRowAlt_User_Style5_Em TD {
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #a00000;
+    FONT-WEIGHT: bold;
+}
+
+.TIRow_User_Style5_Hi TD,.TIRowAlt_User_Style5_Hi TD {
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #a00000;
+    FONT-STYLE: italic;
+}
+
+.TIRow_User_Style5_HiEm TD,.TIRowAlt_User_Style5_HiEm TD {
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #a00000;
+    FONT-STYLE: italic;
+    FONT-WEIGHT: bold;
+}
+
+/* Style6 - Red on White  */
+.TIRow_User_Style6 TD,.TIRowAlt_User_Style6 TD {
+    COLOR: #a00000;
+    BACKGROUND-COLOR: #ffffff;
+}
+
+.TIRow_User_Style6_Em TD,.TIRowAlt_User_Style6_Em TD {
+    COLOR: #a00000;
+    BACKGROUND-COLOR: #ffffff;
+    FONT-WEIGHT: bold;
+}
+
+.TIRow_User_Style6_Hi TD,.TIRowAlt_User_Style6_Hi TD {
+    COLOR: #a00000;
+    BACKGROUND-COLOR: #ffffff;
+    FONT-STYLE: italic;
+}
+
+.TIRow_User_Style6_HiEm TD,.TIRowAlt_User_Style6_HiEm TD {
+    COLOR: #a00000;
+    BACKGROUND-COLOR: #ffffff;
+    FONT-STYLE: italic;
+    FONT-WEIGHT: bold;
+}
+
+/* Blue background */
+.TIRow_HiBlue TD,.TIRowAlt_HiBlue TD {
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #37658c;
+}
+
+.TIRow_User_HiBlue TD,.TIRowAlt_User_HiBlue TD {
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #37658c;
+}
+
+/* Black background */
+.TIRow_HiBlack TD,.TIRowAlt_HiBlack TD {
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #000000;
+}
+
+/* White background */
+.TIRow_HiWhite TD,.TIRowAlt_HiWhite TD {
+    BACKGROUND-COLOR: #ffffff;
+    color: #000000;
+}
+
+.TI_ERROR_CONTROL {
+    COLOR: #ff0033;
+}
+
+/* WORKFLOW */
+/* divs used to pre-fetch images 
+div#workflow_a1 {
+    background: url(../workflow/images/a1.png) no-repeat -9999px -9999px;
+}
+div#workflow_a2 {
+    background: url(../workflow/images/a2.png) no-repeat -9999px -9999px;
+}
+div#workflow_c {
+    background: url(../workflow/images/c.png) no-repeat -9999px -9999px;
+}
+div#workflow_c1 {
+    background: url(../workflow/images/c1.png) no-repeat -9999px -9999px;
+}
+div#workflow_c2 {
+    background: url(../workflow/images/c2.png) no-repeat -9999px -9999px;
+}
+div#workflow_complete {
+    background: url(../workflow/images/complete.png) no-repeat -9999px -9999px;
+}
+div#workflow_er {
+    background: url(../workflow/images/er.png) no-repeat -9999px -9999px;
+}
+div#workflow_fp {
+    background: url(../workflow/images/fp.png) no-repeat -9999px -9999px;
+}
+div#workflow_i {
+    background: url(../workflow/images/i.png) no-repeat -9999px -9999px;
+}
+div#workflow_ie {
+    background: url(../workflow/images/ie.png) no-repeat -9999px -9999px;
+}
+div#workflow_l {
+    background: url(../workflow/images/l.png) no-repeat -9999px -9999px;
+}
+div#workflow_pr {
+    background: url(../workflow/images/pr.png) no-repeat -9999px -9999px;
+}
+div#workflow_r {
+    background: url(../workflow/images/r.png) no-repeat -9999px -9999px;
+}
+div#workflow_sy {
+    background: url(../workflow/images/sy.png) no-repeat -9999px -9999px;
+}
+div#workflow_w {
+    background: url(../workflow/images/w.png) no-repeat -9999px -9999px;
+}
+*/

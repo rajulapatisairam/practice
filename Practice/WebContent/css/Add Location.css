@@ -1,0 +1,108 @@
+
+body {
+	background-color:#FFFFFF;
+}
+.container-fluid{
+
+padding:0px;
+}
+.body{
+overflow-x:hidden;
+ padding-left: 0px;
+    padding-right: 0px;
+}
+.header{
+background-color:grey;
+height:100px;
+}
+.footer
+{
+	margin-top:40px;
+	background-color:grey;
+	height:100px;
+}
+
+#logo
+{
+    height:75px;
+    margin-left: 10px;
+    margin-top: 9px;
+}
+
+
+.content{
+min-height:475px;
+}
+#list
+{
+	width:494px;
+	margin-top: 37px;
+	padding-top:0px;
+	margin-left: 25px;
+}
+
+#body-lef
+{
+	
+	-moz-border-radius:0px;
+}
+#header-list
+{
+	 height: 45px;
+	 text-align:center;
+	 color: black;
+}
+#btn
+{
+	 float: right;
+    margin-left: 0;
+    margin-top: -30px;
+    padding-right: 12px;
+}
+#zip{
+	 margin-left: 91px;
+}
+#Map-Loca
+{
+	 margin-left: -13px;
+	 margin-top: 58px;
+}
+#Ten-name
+{
+	float:right;
+	margin-right: 100px;
+	margin-top: 6px;	
+}
+
+#accor
+{
+	color:#000000;
+}
+.nav li a:hover
+{
+	background-color:#FFFFFF;
+}
+#map
+{
+	margin-top: 30px;
+}
+.nav .dropdown-toggle .caret 
+{
+    border-top-color:#000000;
+    margin-top: 6px;
+}
+#btn
+{
+	float:right;
+	 margin-right: -190px;
+    margin-top: 2px;
+}
+#Loca
+{
+	 background-color:#00BFFF;
+    list-style: none outside none;
+    margin-right: 116px;
+    padding: 4px;
+}
+
+

@@ -1,0 +1,57 @@
+input.span3, textarea.span3, .uneditable-input.span3 {
+    width: 39%;
+}	
+@media (min-width: 768px) and (max-width: 1024px)
+{
+	
+	#head
+	{
+	width: 71%;
+	font-size: xx-large;
+	margin-left: 0;
+	}
+	
+	.logout
+	 {
+	    margin-left: 599px;
+	    margin-top: -71px;
+	}
+	.mlabel
+	{
+	width: 58% !important;
+	}
+	
+	.mlink
+	{
+	padding-left: 2px !important;
+	
+	}
+	.mlin
+	{
+	padding-left: 2px !important;
+	margin-left: 106px;
+	
+	}
+	
+	.mwidth
+	{
+	margin-left: 10px;
+	}
+	
+	input.span3, textarea.span3, .uneditable-input.span3
+	{
+	width: 39%;
+	}
+	
+	#ccy{
+	margin-left: 25px;
+    width: 56px;
+	}
+	
+	#amount{
+	margin-left: 2px;
+    margin-top: 5px;
+    width: 55px;
+	}
+	
+}

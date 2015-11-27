@@ -1,0 +1,86 @@
+body {
+	color:#000000;
+}
+.container-fluid
+{
+	padding:0px;
+}
+.body
+{
+	overflow-x:hidden;
+ 	padding-left: 0px;
+    padding-right: 0px;
+	float:left;
+}
+.header
+{
+background-color:grey;
+height:100px;
+}
+.footer
+{
+margin-top:40px;
+background-color:grey;
+height:100px;
+}
+
+#logo
+{
+    height:75px;
+    margin-left: 10px;
+    margin-top: 9px;
+}
+
+.content
+{
+min-height:475px;
+}
+#list
+{
+	width:494px;
+	margin-top: 37px;
+	padding-top:0px;
+	margin-left: 25px;
+}
+
+#accor
+{
+	color:#000000;
+}
+#header-list
+{
+	 height: 45px;
+	 text-align:center;
+	 color: black;
+}
+#Ten-name
+{
+	float:right;
+	margin-right: 100px;
+	margin-top: 6px;
+}
+
+.nav li a:hover
+{
+	background-color:#FFFFFF;
+}
+.nav .dropdown-toggle .caret {
+   
+    border-top-color:#000000;
+    margin-top: 6px;
+}
+#btn
+{
+	float:right;
+	margin-right:-180px;
+    margin-top: 2px;
+}
+#View
+{
+	list-style:none;
+	background-color:#ADD8E6;
+	margin-right: 80px;
+    padding: 4px;
+}
+
+

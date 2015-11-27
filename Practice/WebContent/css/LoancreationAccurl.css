@@ -1,0 +1,44 @@
+body
+{
+	overflow-x: hidden;
+}
+
+	.control-group .controls .span1{
+	 width: 83px;
+	}
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+	/* .row-fluid .span5 
+	{
+	width: 100%;
+	} */
+	#head
+	{
+	width: 71%;
+	font-size: xx-large;
+
+	}
+	
+	.logout{
+	 margin-left: 599px;
+    margin-top: -71px;
+	}
+	.mlabel
+	{
+	width: 58% !important;
+	}
+	.menubar{
+	}
+	
+	.mlink
+	{
+	padding-left: 2px !important;
+	}
+	.mwidth
+	{
+	margin-left: 10px;
+	}
+	
+	
+}

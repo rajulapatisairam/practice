@@ -1,0 +1,209 @@
+.row-fluid .wellexit {
+    /*width: 1.3646%;*/
+    width: 5.365%;
+}
+
+.ui-accordion .ui-accordion-content{
+	height: 506px!important;
+}
+
+.tab-content {
+    overflow: hidden;
+}
+#inputName {
+    width: 155px;
+    margin-top: 10px;
+}
+#s2id_sel{
+	
+    margin-left: -57px;
+   position: relative;
+
+}
+.form-horizontal .controls {
+    margin-left: 0px;
+   
+    padding-left: 0;
+}
+
+.form-horizontal :first-child.controls {
+   
+   
+    padding-left: 0;
+}
+.select2-container .select2-choice span {
+    display: block;
+    margin-right: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#lblsfromdt {
+    margin-left: 0;
+    width: 100px;
+}
+#lblstodt{
+	margin-left: 0;
+    width: 100px;
+}
+body {
+    overflow-x: hidden;
+   
+}	
+#logoutbtn {
+   margin-left: 63%;
+    margin-top: 11px;
+}
+#sel{
+	/* margin-left:77%; */
+	width:287px; 
+	
+}
+.select2-container .select2-choice {
+    -moz-user-select: none;
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    background-image: -moz-linear-gradient(center bottom , #EEEEEE 0%, white 50%);
+    border: 1px solid #AAAAAA;
+    border-radius: 4px 4px 4px 4px;
+    color: #444444;
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+    padding: 0 0 0 8px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+    
+}
+#lblcurr{
+	margin-right: 57px;
+}
+.row-fluid .span6 {
+    width: 46.88%;
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+
+body {
+    overflow-x: hidden;
+   
+}	
+
+.row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+}
+.row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+}
+.row-fluid .wellexit {
+    width: 14.3646%;
+}
+
+.row-fluid .span6 {
+    width: 46.88%;
+}
+
+
+#head {
+ margin-left: 14%;
+    margin-top: 2%;
+}
+#logoutbtn {
+     margin-left: 69%;
+}
+#lblappid{
+width:100px;	
+}
+#btnappid {
+    width: 138px;
+}
+#lblrim{
+	/*margin-left: -101px;*/
+    width: 100px;
+	
+}
+#btnrim{
+	 width: 139px;
+}
+#lblloan{
+	  width: 100px;
+}
+#btnloan{
+	width: 139px;
+}
+#lblcust{
+	width: 101px;
+}
+#btncust{
+ width: 138px;	
+}
+#lblfromdt{
+	width: 100px;
+}
+#btnfromdt{
+	
+}
+#lbltodt{
+	width: 100px;
+}
+#btntodt{
+	
+}
+#tbldata{
+overflow-x: hidden;
+  
+}
+.tab-content{
+	overflow:hidden; 
+}
+#lblsappid{
+width:100px;	
+}
+#btnsappid {
+    width: 138px;
+}
+#lblsrim{
+	
+    width: 100px;
+	
+}
+#btnsrim{
+	 width: 139px;
+}
+#lblsloan{
+	  width: 100px;
+}
+#btnsloan{
+	width: 139px;
+}
+#lblscust{
+	width: 101px;
+}
+#btnscust{
+ width: 138px;	
+}
+#lblsfromdt{
+	 margin-left: 1px;
+    width: 100px;
+}
+#btnsfromdt{
+	
+}
+#lblstodt{
+	width: 100px;
+}
+#btnstodt{
+	
+}
+#inputName{
+	width: 155px;
+}
+#lblcurr{
+	margin-right: 57px;
+}
+}
+
+

@@ -1,0 +1,47 @@
+table.todo  {
+  border: 1px solid #CCCCCC;
+  }
+  
+table.todo th {
+  background: #EFEFEF none repeat scroll 0 0;
+  border-top: 1px solid #CCCCCC;
+  font-size: small;
+  padding-left: 5px;
+  padding-right: 4px;
+  padding-top: 4px;
+  vertical-align: top;
+}
+
+table td:first-child {
+  font-weight:bold;
+  }
+th.todoheader {
+	color:black
+}
+table .first {
+  width: 120px;
+  }
+  
+table .second {
+  width: 100px;
+  }
+  
+  table .third {
+  width: 400px;
+  }
+  table .graybg {
+  background: #EEEEEE;
+  }
+   table .whitebg {
+  background: white;
+  }
+  
+table.todo {
+  
+  border-top: 1px solid #CCCCCC;
+  font-size: small;
+  padding-left: 5px;
+  padding-right: 4px;
+  padding-top: 4px;
+  vertical-align: top;
+}

@@ -1,0 +1,83 @@
+.container-fluid{
+
+padding:0px;
+}
+body{
+
+overflow-x: hidden;
+ padding-left: 0px;
+    padding-right: 0px;
+}
+.header{
+background-color:#808080;
+height:100px;
+}
+.footer{
+background-color:#808080;
+height:100px;
+}
+
+.headerpop{
+background-color:#808080;
+height:20px;
+}
+.footerpop{
+background-color:#808080;
+height:37px;
+}
+
+#logo{
+height: 83px;
+    margin-left: 10px;
+    margin-top: 9px;
+    width: 148px;
+}
+
+#homeimg{
+width:64%;
+}
+
+.plusimg{
+height:35px;
+}
+.content{
+min-height:475px;
+}
+.table th, .table td {
+    border-top: 1px solid #DDDDDD;
+    line-height: 20px;
+    padding: 8px;
+    text-align: center;
+    vertical-align: top;
+    color:black;
+}
+
+.table th{
+background-color:lavender;
+}
+
+.tbla{
+text-decoration:underline;
+color:black;
+}
+
+.modal-body{
+overflow-y:auto;
+}
+
+.controls .txtbox{
+height: 22px;
+width: 178px;
+}
+.controls .txtbox1{
+
+width: 178px;
+}
+
+.controls .txtboxpag{
+height: 22px;
+width: 205px;
+}
+.span2 .sub {
+   width:78px;
+}
